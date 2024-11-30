@@ -541,7 +541,7 @@ html {
 .about-btn:hover {
     background-color: var(--green);
     color: var(--white);
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 
@@ -729,9 +729,6 @@ footer span {
     border-radius: 20px;
 }
 
-.map-txt {
-    width: 100vh;
-}
 
 
 .map-imgcontainer {
@@ -740,8 +737,17 @@ footer span {
 }
 
 .map-image {
-    margin-top: -30vh;
+    margin-top: -50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.map-txt {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--green);
 }
 
 .map-imgcontainer img {
@@ -799,6 +805,43 @@ footer span {
     width: 100%;
 }
 
+.service-text h3 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+
+.services-typewriter {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #D9D9D9;
+    color: #000;
+    border-radius: 10px;
+}
+
+/* .services-typewriter h1 {
+    text-decoration: underline;
+    font-size: 35px;
+} */
+
+.services-typewriter span {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+.service-text p {
+    margin-top: 10px;
+}
+
+/* .service-text li {
+    margin-top: 10px;
+} */
 
 
 .services-content-alternate {
@@ -818,6 +861,14 @@ footer span {
     border-radius: 40px;
     border: 2px solid var(--green);
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -870,12 +921,47 @@ footer span {
     padding: 30px;
 }
 
+.safety-services-alt {
+    background-color: var(--green);
+    color: var(--white);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.safety-services-alt .summary1 h1,
+.symbols {
+    color: var(--white);
+}
+
+.safety-services-alt .symbols {
+    color: var(--green);
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.safety-services-alt .subdetails summary b {
+    color: var(--white);
+}
+
+.safety-services-img {
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    margin: 20px;
+    object-fit: cover;
+}
+
 details summary b {
     color: #000;
 }
 
 details {
     cursor: pointer;
+}
+
+details p {
+    margin-top: 10px;
 }
 
 .summary1 {
@@ -892,11 +978,11 @@ details>summary {
 }
 
 .symbols {
+    border-radius: 10px;
     background-color: var(--green);
     color: var(--white);
-    height: 20vh;
-    padding: 15px;
-    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .details-1 {
@@ -1286,10 +1372,23 @@ details>summary {
     color: var(--white);
 }
 
+
 .link-items {
     display: flex;
 }
 
+.quick-links-section1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.quick-links-section1 ul {
+    color: #f2f2f2;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px;
+}
 
 
 .link-items ul li a {
@@ -1303,7 +1402,7 @@ details>summary {
 
 
 
-@media screen and (max-width: 1500px) {
+/* @media screen and (max-width: 1500px) {
 
     .section-title {
         overflow-y: hidden;
@@ -1391,7 +1490,6 @@ details>summary {
 
 
 
-    /* Contact Styling */
 
 
     .handle-form form {
@@ -1415,30 +1513,40 @@ details>summary {
 
 
 
-}
+} */
 
 
 
 
 
 
-@media only screen and (min-width: 200px) and (max-width: 1250px) {
+@media only screen and (min-width: 200px) and (max-width: 1500px) {
     .navbar {
         padding: 0;
         display: flex;
         flex-wrap: wrap;
         overflow-y: hidden;
-
+        justify-content: space-around;
+        padding: 10px;
     }
 
     .menu-bar {
         visibility: visible;
+        margin-left: 10vh;
     }
 
     .navbar-items {
         visibility: hidden;
         padding: 0;
         margin-bottom: -100vh;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 
     .navbar ul li {
@@ -1489,10 +1597,6 @@ details>summary {
     .bn38:hover {
         background-color: rgb(193, 193, 193);
     }
-
-
-
-
 
 
 
@@ -1561,13 +1665,6 @@ details>summary {
     }
 
 
-
-
-    .navbar ul {
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-    }
 
     /* Home */
     .introVideo {
@@ -1709,6 +1806,46 @@ details>summary {
     .trunky-container .sublist {
         padding: 5px;
     }
+
+
+
+    /* Safety Services */
+
+
+    .safety-services {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .safety-services-ra {
+        display: flex;
+        padding: 30px;
+        flex-wrap: wrap;
+    }
+
+    .safety-services-alt {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .safety-services-img {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+
+
+    .details-1 {
+        width: 100%;
+    }
+
+    .subdetails {
+        margin-left: 0;
+    }
+
 
 
 

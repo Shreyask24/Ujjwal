@@ -71,19 +71,17 @@ const Navbar = () => {
                                 <li className="ss-dropdown">
                                     <a href="#" style={{ fontSize: "18px" }}>Safety Services Consultancy</a>
                                     <ul className="ss-menu">
-                                        <li><Link to="/safety-services" style={{ fontSize: "17px" }}>Risk Assessment</Link></li>
-                                        <li><Link to="/safety-services" style={{ fontSize: "17px" }}>Workshop Facilitation</Link></li>
-                                        <li><Link to="/safety-services" style={{ fontSize: "17px" }}>Functional Safety Services</Link></li>
-                                        <li><Link to="/safety-services" style={{ fontSize: "17px" }}>Other Safety Workshop Services</Link></li>
-                                        <li><Link to="/safety-services" style={{ fontSize: "17px" }}>Other Safety Desktop Studies</Link></li>
-                                        <li><Link to="/safety-services" style={{ fontSize: "17px" }}>Safety Audit</Link></li>
-                                        <li><Link to="/safety-services" style={{ fontSize: "17px" }}>Energy Audit</Link></li>
+                                        <li><Link to="/safety-services" state={{ section: "risk-assessment" }} style={{ fontSize: "17px" }}>Risk Assessment</Link></li>
+                                        <li><Link to="/safety-services" state={{ section: "workshop-facilitation" }} style={{ fontSize: "17px" }}>Workshop Facilitation</Link></li>
+                                        <li><Link to="/safety-services" state={{ section: "functional-safety-services" }} style={{ fontSize: "17px" }}>Functional Safety Services</Link></li>
+                                        <li><Link to="/safety-services" state={{ section: "other-safety-workshop-services" }} style={{ fontSize: "17px" }}>Other Safety Workshop Services</Link></li>
+                                        <li><Link to="/safety-services" state={{ section: "other-safety-desktop-studies" }} style={{ fontSize: "17px" }}>Other Safety Desktop Studies</Link></li>
+                                        <li><Link to="/safety-services" state={{ section: "safety-audit" }} style={{ fontSize: "17px" }}>Safety Audit</Link></li>
+                                        <li><Link to="/safety-services" state={{ section: "energy-audit" }} style={{ fontSize: "17px" }}>Energy Audit</Link></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-
-
 
 
 

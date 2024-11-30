@@ -135,12 +135,9 @@ const About = () => {
 
                     </div>
 
-                    {/* <div className='map-xt'>
-                        <h1>Empowering Solutions Worldwide</h1>
-                    </div> */}
-
                     <div data-aos="fade-left" data-aos-once='true' data-aos-duration="2000" className='map-image'>
                         <img loading="lazy" ref={navItems} src={AboutusMap} alt="about-us" />
+                        <h1 className='map-txt'>Empowering Solutions Worldwide</h1>
                     </div>
                 </div>
 

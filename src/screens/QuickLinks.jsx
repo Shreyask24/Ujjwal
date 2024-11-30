@@ -15,16 +15,16 @@ const QuickLinks = () => {
                 </div>
                 <div data-aos="fade-in" data-aos-once='true' data-aos-duration="2000" className='link-items'>
 
-                    <div>
+                    <div className='quick-links-section1'>
                         <ul className='company-name'>
                             <h1 >Ujjwal Engineers & Environmental Services</h1>
                             <h3>Environmental organization</h3>
-                            <p>
-                                103, 14A, Kailash Nagar Rd, Kailash Nagar, Shivaji Nagar, Ambernath, Maharashtra 421501
-                            </p>
+
+                            <p>103, 14A, Kailash Nagar Rd,</p>
+                            <p>Kailash Nagar, Shivaji Nagar Ambernath,</p>
+                            <p>Maharashtra 421501</p>
 
                             <div className='address'>
-
                                 <Link to="mailto:info@ujjwalengineers.com">info@ujjwalengineers.com</Link>
                                 <Link to="whatsapp://send/?phone=+919867215033">+91 9867215033</Link>
                             </div>
@@ -42,10 +42,9 @@ const QuickLinks = () => {
                             <li><Link to="/services">Greenhouse Gas Emission</Link></li>
                             <li><Link to="/services">Extended producer responsibility</Link></li>
                             <li><Link to="/services">Environmental Clearance [EC] </Link></li>
-                            <li><Link to="/services">Environmental Impact Assessment (EIA)</Link></li>
-                            <li><Link to="/services">Consent to Establish / Consent to Operate</Link></li>
+                            <li><Link to="/services">Consent to Establish / Operate</Link></li>
                             <li><Link to="/services">Environment Audit</Link></li>
-                            <li><Link to="/services">Environmental Monitoring and Analysis</Link></li>
+                            <li><Link to="/services">Environmental Monitoring & Analysis</Link></li>
                             <li><Link to="/services">Statutory Compliances</Link></li>
                         </ul>
                     </div>
@@ -69,7 +68,7 @@ const QuickLinks = () => {
                             <li><Link to="/projects">Effluent Treatment Plant (ETP)</Link></li>
                             <li><Link to="/projects">Sewage Treatment Plant (STP)</Link></li>
                             <li><Link to="/projects">Multiple Effect Evaporator (MEE)</Link></li>
-                            <li><Link to="/projects">Mechanical Vapor Recompression (MVRE)</Link></li>
+                            <li><Link to="/projects">Mechanical Vapor Recompression</Link></li>
                             <li><Link to="/projects">Agitated Thin Film Dryer (ATFD)</Link></li>
                         </ul>
                     </div>
