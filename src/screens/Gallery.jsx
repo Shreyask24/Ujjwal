@@ -103,7 +103,6 @@ const Gallery = () => {
                             <img src={logo17} alt="future bridge" />
                             <img src={logo18} alt="bhor" />
                             <img src={logo21} alt="drt anthea aroma chemicals" />
-                            <img src={logo22} alt="hse" />
 
 
                             <img src={logo6} alt="excel" />
@@ -130,6 +129,9 @@ const Gallery = () => {
 
                             <img src={logo19} alt="go green mechanisms pvt ltd" />
                             <img src={logo20} alt="mahabal enviro engineers pvt ltd" />
+
+                            <img src={logo22} alt="hse" />
+
 
                         </marquee>
 
@@ -161,7 +163,13 @@ const Gallery = () => {
                         <li><Link to="https://nabl-india.org" target='_blank'>National Accreditation Board for Testing and Calibration Laboratories (NABL)</Link></li>
                         <li><Link to="https://nabh.co" target='_blank'>National Accreditation Board for Hospitals &amp; Healthcare Providers (NABH)</Link></li>
                         <li><Link to="https://www.iso.org" target='_blank'>The International Organization for Standardization (ISO)</Link></li>
+
                         <li><Link to="https://igbc.in" target='_blank'>Indian Green Building Council</Link></li>
+
+
+                    </ul>
+
+                    <div>
                         <li><Link to="https://maitri.mahaonline.gov.in" target='_blank'>Maharashtra Industry, Trade and Investment Facilitation Cell (MAITRI)</Link></li>
                         <li><Link to="https://peso.gov.in" target='_blank'>Petroleum &amp; Explosives Safety Organization (PESO)</Link></li>
                         <li><Link to="https://pib.gov.in" target='_blank'>Press Information Bureau (PIB)</Link></li>
@@ -171,8 +179,16 @@ const Gallery = () => {
                         <li><Link to="https://dish.gujarat.gov.in" target='_blank'>The Directorate, Industrial Safety and Health, Gujarat</Link></li>
                         <li><Link to="https://www.fda.gov" target='_blank'>Food and Drug Administration (US-FDA)</Link></li>
 
-                    </ul>
 
+
+                        <li><Link to="https://moef.gov.in/" target='_blank'>Ministry of Environment, Forest and Climate Change (MoEFCC)</Link></li>
+                        <li><Link to="https://nsc.org.in/" target='_blank'>National Safety Council (NSC):</Link></li>
+                        <li><Link to="https://dgfasli.gov.in/" target='_blank'>Directorate General Factory Advice Service & Labour Institutes (DGFASLI)</Link></li>
+                        <li><Link to="https://www.osha.gov/" target='_blank'>Occupational Safety and Health Administration (OSHA)</Link></li>
+                        <li><Link to="https://www.bis.gov.in/" target='_blank'>Bureau of Indian Standards (BIS)</Link></li>
+                        <li><Link to="https://ndma.gov.in/" target='_blank'>National Disaster Management Authority (NDMA)</Link></li>
+                        <li><Link to="https://www.ilo.org/" target='_blank'>International Labour Organization (ILO)</Link></li>
+                    </div>
 
                 </div>
 

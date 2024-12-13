@@ -7,6 +7,7 @@ import STP from "../assets/STP.png"
 import MEE from "../assets/MEE.png"
 import MVRE from "../assets/MVRE.png"
 import ATFD from "../assets/ATFD.jpg"
+import RO from "../assets/RO.jpg"
 
 
 import ProjectHeader from "../assets/Projects-Header.png"
@@ -39,7 +40,7 @@ const TrunkyExecution = () => {
                 </div>
                 <div className='trunky-maincontent'>
                     <div>
-                        <div className='services-content' id='etp'>
+                        <div className='services-content-alternate' id='etp'>
 
 
                             <img data-aos="fade-right" data-aos-once='true' data-aos-duration="2000" src={ETP} loading="lazy" alt="Effluent Treatment Plant (ETP)" />
@@ -90,7 +91,7 @@ const TrunkyExecution = () => {
 
                         </div>
 
-                        <div className='services-content-alternate' id='mee'>
+                        <div className='services-content' id='mee'>
                             <img data-aos="fade-right" data-aos-once='true' data-aos-duration="2000" src={MEE} loading="lazy" alt="Multiple Effect Evaporator (MEE)" />
 
                             <div data-aos="fade-in" data-aos-once='true' data-aos-duration="2000" className="service-text">
@@ -126,7 +127,7 @@ const TrunkyExecution = () => {
                         </div>
 
 
-                        <div className='services-content' id='mvre'>
+                        <div className='services-content-alternate' id='mvre'>
                             <img data-aos="fade-right" data-aos-once='true' data-aos-duration="2000" src={MVRE} loading="lazy" alt="Mechanical Vapor Recompression (MVRE)" />
                             <div data-aos="fade-in" data-aos-once='true' data-aos-duration="2000" className="service-text">
 
@@ -156,7 +157,7 @@ const TrunkyExecution = () => {
                             </div>
                         </div>
 
-                        <div className='services-content-alternate' id='atfd'>
+                        <div className='services-content' id='atfd'>
                             <img data-aos="fade-right" data-aos-once='true' data-aos-duration="2000" src={ATFD} loading="lazy" alt="Agitated Thin Film Dryer (ATFD)" />
 
                             <div data-aos="fade-in" data-aos-once='true' data-aos-duration="2000" className="service-text">
@@ -200,7 +201,7 @@ const TrunkyExecution = () => {
 
                         </div>
 
-                        <div className='services-content' id='stp'>
+                        <div className='services-content-alternate' id='stp'>
                             <img data-aos="fade-right" data-aos-once='true' data-aos-duration="2000" src={STP} loading="lazy" alt="Sewage Treatment Plant (STP)" />
                             <div data-aos="fade-in" data-aos-once='true' data-aos-duration="2000" className="service-text">
                                 <b>   Sewage Treatment Plant (STP) </b>
@@ -222,6 +223,30 @@ const TrunkyExecution = () => {
                                     Transform wastewater into reusable resources with our STP solutions.
 
                                 </p>
+                            </div>
+                        </div>
+
+
+                        <div className='services-content' id='ro'>
+                            <img data-aos="fade-right" data-aos-once='true' data-aos-duration="2000" src={RO} loading="lazy" alt="Reverse Osmosis (Industrial) Plant" />
+                            <div data-aos="fade-in" data-aos-once='true' data-aos-duration="2000" className="service-text">
+                                <b>   Reverse Osmosis (Industrial) Plant </b>
+                                Reverse Osmosis (RO) is a cutting-edge water purification technology that removes dissolved salts, impurities, and harmful contaminants, ensuring clean and safe water. It works by pushing water through a semi-permeable membrane, filtering out up to 99% of pollutants.
+
+                                <p>
+
+                                    <b>Why Choose Our RO Systems?</b>
+
+                                    <li className='sublist'><b>High Purity Water: </b>Removes salts, chemicals, and bacteria.</li>
+                                    <li className='sublist'><b>Cost-Effective & Eco-Friendly: </b>Reduces bottled water use.</li>
+                                    <li className='sublist'><b>Safe & Reliable: </b>Delivers clean water for residential, commercial, and industrial needs.</li>
+
+                                    <b>Applications:</b>
+                                    <li className='sublist'>Residential Water Filtration</li>
+                                    <li className='sublist'>Industrial & Manufacturing Processes</li>
+                                    <li className='sublist'>Commercial Use in Hotels & Restaurants</li>
+                                </p>
+
                             </div>
                         </div>
 

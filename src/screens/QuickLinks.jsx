@@ -37,39 +37,54 @@ const QuickLinks = () => {
                     <div>
                         <ul>
                             <h1>Services</h1>
-                            <li><Link to="/services">Life Cycle Assessment</Link></li>
-                            <li><Link to="/services">Product Carbon Footprint</Link></li>
-                            <li><Link to="/services">Greenhouse Gas Emission</Link></li>
-                            <li><Link to="/services">Extended producer responsibility</Link></li>
-                            <li><Link to="/services">Environmental Clearance [EC] </Link></li>
-                            <li><Link to="/services">Consent to Establish / Operate</Link></li>
-                            <li><Link to="/services">Environment Audit</Link></li>
-                            <li><Link to="/services">Environmental Monitoring & Analysis</Link></li>
-                            <li><Link to="/services">Statutory Compliances</Link></li>
+                            <li><Link to="/services" state={{ section: "life-cycle-assessment" }}>Life Cycle Assessment</Link></li>
+                            <li><Link to="/services" state={{ section: "product-carbon-footprint" }}>Product Carbon Footprint</Link></li>
+                            <li><Link to="/services" state={{ section: "greenhouse-gas-emission" }}>Greenhouse Gas Emission</Link></li>
+                            <li><Link to="/services" state={{ section: "environmental-clearance" }}>Environmental Clearance</Link></li>
+                            <li><Link to="/services" state={{ section: "consent-to-establish" }}>Consent to Establish</Link></li>
+                            <li><Link to="/services" state={{ section: "environmental-audit" }}>Environmental Audit</Link></li>
+                            <li><Link to="/services" state={{ section: "statutory-compliances" }}>Statutory Compliances</Link></li>
+                            <li><Link to="/services" state={{ section: "environmental-monitoring-and-analysis" }}>Environmental Monitoring & Analysis</Link></li>
+                            <li><Link to="/services" state={{ section: "epr" }}>Extended Producer Responsibility</Link></li>
                         </ul>
                     </div>
 
                     <div>
                         <ul>
                             <h1>Safety Services</h1>
-                            <li><Link to="/safety-services">Risk Assessment</Link></li>
-                            <li><Link to="/safety-services">Workshop Facilation</Link></li>
-                            <li><Link to="/safety-services">Functional Safety Services</Link></li>
-                            <li><Link to="/safety-services">Other Safety Workshop Services</Link></li>
-                            <li><Link to="/safety-services">Other Safety Desktop Studies</Link></li>
-                            <li><Link to="/safety-services">Safety Audit</Link></li>
-                            <li><Link to="/safety-services">Energy Audit</Link></li>
+                            <li><Link to="/safety-services" state={{ section: "risk-assessment" }}>Risk Assessment</Link></li>
+                            <li><Link to="/safety-services" state={{ section: "workshop-facilitation" }}>Workshop Facilitation</Link></li>
+                            <li><Link to="/safety-services" state={{ section: "functional-safety-services" }}>Functional Safety Services</Link></li>
+                            <li><Link to="/safety-services" state={{ section: "other-safety-workshop-services" }}>Other Safety Workshop Services</Link></li>
+                            <li><Link to="/safety-services" state={{ section: "other-safety-desktop-studies" }}>Other Safety Desktop Studies</Link></li>
+                            <li><Link to="/safety-services" state={{ section: "safety-audit" }}>Safety Audit</Link></li>
+                            <li><Link to="/safety-services" state={{ section: "energy-audit" }}>Energy Audit</Link></li>
                         </ul>
                     </div>
 
                     <div>
                         <ul>
                             <h1>Projects</h1>
-                            <li><Link to="/projects">Effluent Treatment Plant (ETP)</Link></li>
-                            <li><Link to="/projects">Sewage Treatment Plant (STP)</Link></li>
-                            <li><Link to="/projects">Multiple Effect Evaporator (MEE)</Link></li>
-                            <li><Link to="/projects">Mechanical Vapor Recompression</Link></li>
-                            <li><Link to="/projects">Agitated Thin Film Dryer (ATFD)</Link></li>
+                            <li>
+                                <Link to="/projects" state={{ section: "etp" }}>Effluent Treatment Plant (ETP)</Link>
+
+                            </li>
+                            <li>
+                                <Link to="/projects" state={{ section: "mee" }}>Multiple Effect Evaporator (MEE)</Link>
+
+                            </li>
+                            <li>
+                                <Link to="/projects" state={{ section: "mvre" }}>Mechanical Vapor Recompression</Link>
+
+                            </li>
+                            <li>
+
+                                <Link to="/projects" state={{ section: "atfd" }}>Agitated Thin Film Dryer (ATFD)</Link>
+                            </li>
+                            <li>
+                                <Link to="/projects" state={{ section: "stp" }}>Sewage Treatment Plant (STP)</Link>
+
+                            </li>
                         </ul>
                     </div>
 

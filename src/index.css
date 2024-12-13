@@ -90,7 +90,7 @@ html {
     justify-content: space-around;
     align-items: center;
     text-decoration: none;
-    margin: 15px;
+    margin: 10px;
     color: var(--white);
     font-weight: 600;
     font-size: 19px;
@@ -263,7 +263,7 @@ html {
     visibility: hidden;
     position: absolute;
     top: 0;
-    left: 41vh;
+    left: 39vh;
     padding: 10px;
     list-style-type: none;
     z-index: 1000;
@@ -547,8 +547,9 @@ html {
 
 .typewriter {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     background-color: var(--green);
+    padding: 10px;
 }
 
 .typewriter h1 {
@@ -977,6 +978,22 @@ details>summary {
     list-style-type: "";
 }
 
+.subdetails-circle {
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.subdetails-circle-alt {
+    background-color: var(--white);
+    color: var(--green);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .symbols {
     border-radius: 10px;
     background-color: var(--green);
@@ -1319,12 +1336,19 @@ details>summary {
     text-decoration: underline;
 }
 
+.impLinks-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .impLinks-section ul {
     padding: 20px;
 }
 
 
-.impLinks-section ul li a {
+.impLinks-section ul li a,
+.impLinks-section li a {
     font-size: 20px;
     color: var(--green);
     font-weight: 600;
@@ -1713,7 +1737,7 @@ details>summary {
     .typewriter span {
         color: var(--white);
         font-size: 23px;
-        margin-left: 0;
+        margin-left: 5px;
         font-weight: 500;
     }
 
@@ -1760,6 +1784,25 @@ details>summary {
 
 
 
+    .map-imgcontainer {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+
+    .map-txt {
+        font-size: 18px;
+    }
+
+    .map-imgcontainer img {
+        margin-top: 50vh;
+    }
+
+
+
+
+
 
     /* Services */
 
@@ -1773,13 +1816,15 @@ details>summary {
     }
 
 
-    .services-content {
+    .services-content,
+    .services-content-alternate {
         padding: 0;
         display: flex;
         flex-wrap: wrap;
     }
 
-    .services-content img {
+    .services-content img,
+    .services-content-alternate img {
         width: 100%;
         margin-top: 10vh;
     }
@@ -1881,6 +1926,10 @@ details>summary {
         font-size: 20px;
     }
 
+    .marquee-heading h1 {
+        font-size: 18px;
+    }
+
 
 
     .gallery-marquee {
@@ -1896,7 +1945,10 @@ details>summary {
 
 
 
-
+    .impLinks-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
 
 
@@ -1913,7 +1965,8 @@ details>summary {
     }
 
 
-    .impLinks-section ul li a {
+    .impLinks-section ul li a,
+    .impLinks-section li a {
         font-size: 14px;
         text-align: justify;
         font-weight: 200;

@@ -3,7 +3,7 @@ import React, { useRef, useState } from 'react'
 import UEESLogo from "../assets/UEES-Logo.png"
 import { Link, useNavigate } from 'react-router-dom'
 
-import { Instagram, Youtube, ChevronDown, Facebook, Twitter, X, Menu } from 'lucide-react';
+import { Instagram, Youtube, ChevronDown, Facebook, Twitter, X, Menu, Linkedin } from 'lucide-react';
 
 
 const Navbar = () => {
@@ -94,6 +94,7 @@ const Navbar = () => {
                                 <Link to="/projects" state={{ section: "mvre" }}>Mechanical Vapor Recompression (MVRE)</Link>
                                 <Link to="/projects" state={{ section: "atfd" }}>Agitated Thin Film Dryer (ATFD)</Link>
                                 <Link to="/projects" state={{ section: "stp" }}>Sewage Treatment Plant (STP)</Link>
+                                <Link to="/projects" state={{ section: "ro" }}>Reverse Osmosis Plant (RO)</Link>
                             </div>
                         </div>
                         <li><Link to="/career">Career</Link></li>
@@ -112,6 +113,9 @@ const Navbar = () => {
                         </Link>
                         <Link to="https://youtube.com/@UjjwalEngineers?si=gJkfA1zAApnptO12" target='_blank'>
                             <Youtube strokeWidth={1.5} size="35px" />
+                        </Link>
+                        <Link to="https://www.linkedin.com/company/ujjwal-engineers-and-environmental-services/?viewAsMember=true" target='_blank'>
+                            <Linkedin strokeWidth={1.5} size="30px" />
                         </Link>
                         <Link to="https://x.com/Ujjwalengineers?t=alqC_Eq-jefHB5VW74EeLA&s=08" target='_blank'>
                             <Twitter strokeWidth={1.5} size="30px" />
