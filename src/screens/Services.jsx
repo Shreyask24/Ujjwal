@@ -12,7 +12,6 @@ import EPR from "../assets/EPR.png"
 import EnvironmentalAssessment from "../assets/EnvironmentalAssessment.png"
 import EnvironmentalAudit from "../assets/EnvironmentalAudit.png"
 import ConsentToEstablish from "../assets/Consent-to-Establish.png"
-import ConductingQRA from "../assets/Conducting-QRA.png"
 import Statutory from "../assets/Statutory-Compliances.png"
 import EnvironmentalMonitoring from "../assets/Environmental-Monitoring.png"
 import { useLocation } from 'react-router-dom'
@@ -347,15 +346,6 @@ const Services = () => {
 
                         </div>
 
-                        {/* <div className='services-content-alternate'>
-                            <img data-aos="fade-right" data-aos-once='true' data-aos-duration="2000" src={ConductingQRA} loading="lazy" alt="onducting QRA, RA, HAZOP studies" />
-
-                            <div data-aos="fade-in" data-aos-once='true' data-aos-duration="2000" className="service-text">
-                                <b> Conducting QRA, RA, HAZOP studies: </b>
-                                QRA provides numerical (quantitative) estimates to understand risk exposure to people and environment. HAZOP provides qualitative estimates to understand risk exposure to people, Assets and environment. QRA studies account for potential releases.
-
-                            </div>
-                        </div> */}
 
                         <div className='services-content' id="statutory-compliances">
                             <img data-aos="fade-right" data-aos-once='true' data-aos-duration="2000" src={Statutory} loading="lazy" alt="Statutory Compliances" />

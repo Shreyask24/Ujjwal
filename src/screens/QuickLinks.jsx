@@ -37,7 +37,7 @@ const QuickLinks = () => {
 
                     <div>
                         <ul>
-                            <h1>Services</h1>
+                            <h1>Environmental Services</h1>
                             <li><Link to="/services" state={{ section: "life-cycle-assessment" }}>Life Cycle Assessment</Link></li>
                             <li><Link to="/services" state={{ section: "product-carbon-footprint" }}>Product Carbon Footprint</Link></li>
                             <li><Link to="/services" state={{ section: "greenhouse-gas-emission" }}>Greenhouse Gas Emission</Link></li>

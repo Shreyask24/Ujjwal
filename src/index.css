@@ -215,7 +215,7 @@ html {
     visibility: hidden;
     position: fixed;
     top: 6vh;
-    left: 78vh;
+    left: 72vh;
     width: 95vh;
     /* Initial width */
     height: 53vh;
@@ -256,7 +256,7 @@ html {
     visibility: hidden;
     position: absolute;
     top: 0;
-    left: 39vh;
+    left: 41%;
     padding: 10px;
     list-style-type: none;
     z-index: 1000;
@@ -296,7 +296,7 @@ html {
     visibility: hidden;
     position: absolute;
     top: 0;
-    left: 40vh;
+    left: 39vh;
     padding: 10px;
     list-style-type: none;
     z-index: 1000;
@@ -792,6 +792,11 @@ footer span {
     border: 2px solid var(--green);
 }
 
+.services-content li,
+.services-content-alternate li {
+    margin-top: 10px;
+}
+
 .service-text {
     padding: 50px;
     font-size: 20px;
@@ -999,9 +1004,13 @@ details>summary {
     width: 70vh;
 }
 
+.details-1 li {
+    margin-top: 5px;
+}
+
 .subdetails {
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 
@@ -1824,11 +1833,14 @@ details>summary {
 
     .service-text {
         padding: 0;
-        font-size: 18px;
+        font-size: 17px;
         text-align: justify;
         width: 100%;
     }
 
+    .services-typewriter {
+        margin-bottom: 10%;
+    }
 
 
 
