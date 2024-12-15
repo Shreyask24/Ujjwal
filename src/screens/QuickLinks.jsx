@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import UdyamBroucher from "../assets/Broucher.pdf"
 import UdyamCertificate from "../assets/Udyam-Registration-Certificate.pdf"
 import PolicyMarathi from "../assets/Quality-Policy-Marathi.pdf"
 import PolicyEnglish from "../assets/Quality-Policy-English.pdf"
@@ -85,12 +86,18 @@ const QuickLinks = () => {
                                 <Link to="/projects" state={{ section: "stp" }}>Sewage Treatment Plant (STP)</Link>
 
                             </li>
+                            <li>
+                                <Link to="/projects" state={{ section: "ro" }}>Reverse Osmosis Plant (RO)</Link>
+                            </li>
+
+
                         </ul>
                     </div>
 
                     <div>
                         <ul>
                             <h1>Policy</h1>
+                            <li><Link to={UdyamBroucher} target='_blank' >Broucher</Link></li>
                             <li><Link to={UdyamCertificate} target='_blank' >Udyam Registration Certificate</Link></li>
                             <li><Link to={PolicyEnglish} target='_blank'>Quality Policy - English</Link></li>
                             <li><Link to={PolicyMarathi} target='_blank'>Quality Policy - Marathi</Link></li>

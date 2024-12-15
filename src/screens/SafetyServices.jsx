@@ -404,7 +404,7 @@ const SafetyServices = () => {
 
 
 
-            <div className='safety-services-alt' id='other-safety-desktop-studies'>
+            <div className='safety-services-alt' id='safety-audit'>
                 <div>
                     <img src={SA} className='safety-services-img' alt="" />
                 </div>
@@ -442,7 +442,7 @@ const SafetyServices = () => {
 
 
 
-            <div className='safety-services' id='other-safety-desktop-studies'>
+            <div className='safety-services' id='energy-audit'>
                 <div>
                     <img src={EA} className='safety-services-img' alt="" />
                 </div>

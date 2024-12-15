@@ -67,14 +67,6 @@ html {
     padding: 5px;
 }
 
-.logo-txt {
-    width: 48vh;
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    cursor: pointer;
-}
 
 .menu-bar {
     visibility: hidden;
@@ -122,7 +114,8 @@ html {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.2rem 0.2rem;
+    padding: 0.2rem 0.1rem;
+    width: 10vh;
     font-weight: 700;
     font-size: 15px;
     text-align: center;
@@ -157,7 +150,7 @@ html {
 }
 
 .logo-txt {
-    width: 48vh;
+    width: 41vh;
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
@@ -1249,7 +1242,7 @@ details>summary {
 
 .social-icons a {
     color: var(--white);
-    margin-right: 13px;
+    margin-left: 13px;
 }
 
 .social-icons a:hover {
@@ -1324,7 +1317,7 @@ details>summary {
     width: 20%;
     object-fit: contain;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 20vh;
     margin-top: 10vh;
 }
 
