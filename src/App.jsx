@@ -10,6 +10,7 @@ import Contact from "./screens/Contact"
 import SafetyServices from "./screens/SafetyServices"
 
 import './index.css'
+import PrivacyPolicy from "./screens/PrivacyPolicy"
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="career" element={<Carrer />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
       </BrowserRouter>
     </>

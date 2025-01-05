@@ -207,13 +207,7 @@ function Navbar() {
 
     return (
         <>
-
-
             <Box sx={{ backgroundColor: "#006346" }}>
-
-
-
-
                 <nav className='navbar'>
 
                     <div style={{ display: "flex" }}>
@@ -343,7 +337,7 @@ function Navbar() {
                     aria-describedby="modal-modal-description"
                 >
                     <Box
-                        sx={{ backgroundColor: "#006346", width: 300, height: "100%", marginLeft: "25vw" }}
+                        sx={{ backgroundColor: "#006346", width: 300, height: "100%", marginLeft: "20vw" }}
                         role="presentation"
                     >
 
@@ -378,7 +372,7 @@ function Navbar() {
                                         </ListItemButton>
 
                                         <Collapse sx={{ pl: "1vh" }} in={openEnvironmentDropdown}>
-                                            <List component="div" disablePadding>
+                                            <List sx={{ pl: "1vh" }} component="div" disablePadding>
                                                 <ListItemButton>
                                                     <ListItemText>
                                                         <Link to="/services" state={{ section: "life-cycle-assessment" }} style={{ fontSize: "15px", color: "white" }}>Life Cycle Assessment</Link>
@@ -439,47 +433,47 @@ function Navbar() {
                                         </ListItemButton>
 
                                         <Collapse sx={{ pl: "1vh" }} in={openSafetyDropdown}>
-                                            <List component="div" disablePadding>
+                                            <List sx={{ pl: "1vh" }} component="div" disablePadding>
                                                 <ListItemButton>
                                                     <ListItemText>
-                                                        <Link to="/services" state={{ section: "risk-assessment" }} style={{ fontSize: "15px", color: "white" }}>Risk Assessment</Link>
+                                                        <Link to="/safety-services" state={{ section: "risk-assessment" }} style={{ fontSize: "15px", color: "white" }}>Risk Assessment</Link>
                                                     </ListItemText>
                                                 </ListItemButton>
 
                                                 <ListItemButton>
                                                     <ListItemText>
-                                                        <Link to="/services" state={{ section: "workshop-facilitation" }} style={{ fontSize: "15px", color: "white" }}>Workshop Facilitation</Link>
+                                                        <Link to="/safety-services" state={{ section: "workshop-facilitation" }} style={{ fontSize: "15px", color: "white" }}>Workshop Facilitation</Link>
                                                     </ListItemText>
                                                 </ListItemButton>
 
                                                 <ListItemButton>
                                                     <ListItemText>
-                                                        <Link to="/services" state={{ section: "functional-safety-services" }} style={{ fontSize: "15px", color: "white" }}>Functional Safety Services</Link>
+                                                        <Link to="/safety-services" state={{ section: "functional-safety-services" }} style={{ fontSize: "15px", color: "white" }}>Functional Safety Services</Link>
                                                     </ListItemText>
                                                 </ListItemButton>
 
 
                                                 <ListItemButton>
                                                     <ListItemText>
-                                                        <Link to="/services" state={{ section: "other-safety-workshop-services" }} style={{ fontSize: "15px", color: "white" }}>Other Safety Workshop Services</Link>
+                                                        <Link to="/safety-services" state={{ section: "other-safety-workshop-services" }} style={{ fontSize: "15px", color: "white" }}>Other Safety Workshop Services</Link>
                                                     </ListItemText>
                                                 </ListItemButton>
 
                                                 <ListItemButton>
                                                     <ListItemText>
-                                                        <Link to="/services" state={{ section: "other-safety-desktop-studies" }} style={{ fontSize: "15px", color: "white" }}>Other Safety Desktop Services</Link>
+                                                        <Link to="/safety-services" state={{ section: "other-safety-desktop-studies" }} style={{ fontSize: "15px", color: "white" }}>Other Safety Desktop Services</Link>
                                                     </ListItemText>
                                                 </ListItemButton>
 
                                                 <ListItemButton>
                                                     <ListItemText>
-                                                        <Link to="/services" state={{ section: "safety-audit" }} style={{ fontSize: "15px", color: "white" }}>Safety Audit</Link>
+                                                        <Link to="/safety-services" state={{ section: "safety-audit" }} style={{ fontSize: "15px", color: "white" }}>Safety Audit</Link>
                                                     </ListItemText>
                                                 </ListItemButton>
 
                                                 <ListItemButton>
                                                     <ListItemText>
-                                                        <Link to="/services" state={{ section: "energy-audit" }} style={{ fontSize: "15px", color: "white" }}>Energy Audit</Link>
+                                                        <Link to="/safety-services" state={{ section: "energy-audit" }} style={{ fontSize: "15px", color: "white" }}>Energy Audit</Link>
                                                     </ListItemText>
                                                 </ListItemButton>
 
@@ -497,7 +491,7 @@ function Navbar() {
                                 </ListItemButton>
 
                                 <Collapse sx={{ pl: "1vh" }} in={openProjectDropdown}>
-                                    <List component="div" disablePadding>
+                                    <List sx={{ pl: "1vh" }} component="div" disablePadding>
                                         <ListItemButton>
                                             <ListItemText>
                                                 <Link to="/projects" state={{ section: "etp" }} style={{ fontSize: "15px", color: "white" }}>Effluent Treatment Plant (ETP)</Link>

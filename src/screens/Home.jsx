@@ -181,24 +181,6 @@ const Home = () => {
 
                 </div>
 
-
-                {/* <div className='environment-home'>
-                    
-                    
-                       
-                        <img src={SA} alt="" />
-
-                        <p>
-                            <b>Key Features:</b>
-                            <li><b>Customized Audits: </b> Aligned with your industry and regulatory standards.</li>
-                            <li><b>Compliance Assurance:</b> Meet OSHA, ISO 45001, and more.</li>
-                            <li><b>Risk Evaluation:</b> Detect hazards in processes and conditions.</li>
-                            <li><b>Training Review:</b> Assess and improve safety training.</li>
-                            <li><b>Detailed Reports:</b> Insights and action plans for improvement.</li>
-                        </p>
-                    </div >
-
-                </div> */}
                 <QuickLinks />
 
 

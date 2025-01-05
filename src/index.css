@@ -333,6 +333,7 @@ html {
 
 .env {
     display: flex;
+    margin-left: 5vh;
 }
 
 .environment-home {
@@ -363,11 +364,18 @@ html {
     cursor: pointer;
     font-size: 15px;
     margin-top: 1vh;
-    margin-left: 20vw;
+    margin-left: 16vw;
 }
 
 
 
+.privacy-policy {
+    padding: 5vh;
+}
+
+.privacy-policy li {
+    margin-top: 2vh;
+}
 
 
 
@@ -854,6 +862,7 @@ footer span {
     background-color: #D9D9D9;
     color: #000;
     border-radius: 10px;
+    height: 10vh;
 }
 
 /* .services-typewriter h1 {
@@ -1680,9 +1689,10 @@ details>summary {
     }
 
     .environment-home {
-        width: 100%;
+        width: 95%;
         padding: 20px;
         margin: 1vh;
+        margin-left: 10px;
     }
 
 
@@ -1690,13 +1700,12 @@ details>summary {
 
     .home-lca img {
         object-fit: fill;
-        width: 100%;
         border-radius: 20px;
         width: 100%;
     }
 
     .env-btn {
-        margin-left: 50vw;
+        margin-left: 45vw;
         width: 20vh;
     }
 
@@ -1795,6 +1804,7 @@ details>summary {
 
     .about-maincontent p {
         font-size: 18px;
+        padding: 20px;
     }
 
 
@@ -1844,9 +1854,12 @@ details>summary {
 
     .map-txt {
         font-size: 18px;
+        margin-bottom: 20px;
     }
 
     .map-imgcontainer img {
+        padding: 10px;
+        width: 100%;
         margin-top: 50vh;
     }
 
@@ -1869,7 +1882,7 @@ details>summary {
 
     .services-content,
     .services-content-alternate {
-        padding: 0;
+        padding: 20px;
         display: flex;
         flex-wrap: wrap;
     }
@@ -1914,6 +1927,7 @@ details>summary {
     .safety-services {
         display: flex;
         flex-wrap: wrap;
+        padding: 20px;
     }
 
     .safety-services-ra {
@@ -1924,6 +1938,7 @@ details>summary {
 
     .safety-services-alt {
         display: flex;
+        padding: 20px;
         flex-wrap: wrap;
     }
 

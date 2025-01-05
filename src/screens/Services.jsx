@@ -351,7 +351,7 @@ const Services = () => {
                             <img data-aos="fade-right" data-aos-once='true' data-aos-duration="2000" src={Statutory} loading="lazy" alt="Statutory Compliances" />
 
                             <div data-aos="fade-in" data-aos-once='true' data-aos-duration="2000" className="service-text">
-                                <h3>Statutory Compliances: </h3>
+                                <h3>Environmental Statutory Compliances: </h3>
 
                                 <p>
                                     Professional services for preparation of Environment self-audit report in The format provided by MPCB and submission on EC MPCB Conducting Environmental Due Diligence, Social Due Diligence, Environmental Compliance with respect to environmental norms (MPCB/SPCB and CPCB) etc.
