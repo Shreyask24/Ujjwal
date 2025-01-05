@@ -97,7 +97,7 @@ const QuickLinks = () => {
                     <div>
                         <ul>
                             <h1>Policy</h1>
-                            <li><Link to={UdyamBroucher} target='_blank' >Broucher</Link></li>
+                            <li><Link to={UdyamBroucher} target='_blank' >Company Brochure</Link></li>
                             <li><Link to={UdyamCertificate} target='_blank' >Udyam Registration Certificate</Link></li>
                             <li><Link to={PolicyEnglish} target='_blank'>Quality Policy - English</Link></li>
                             <li><Link to={PolicyMarathi} target='_blank'>Quality Policy - Marathi</Link></li>
@@ -110,7 +110,7 @@ const QuickLinks = () => {
                 <hr />
                 <footer >
                     <h1><span> UJJWAL ENGINEERS & ENVIRONMENTAL SERVICES</span> | All Rights Are Reserved |
-                        Developed and Managed by <Link to="https://kshreyas.netlify.app/" target='_blank'><span>Shreyas Kallurkar</span></Link></h1>
+                        Developed and Managed by <Link to="https://kshreyas.netlify.app/" target='_blank'><span>ShreyasDevx</span></Link></h1>
                 </footer>
             </div>
         </section>

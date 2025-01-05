@@ -54,12 +54,8 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--green);
     color: var(--white);
     padding: 10px;
-
-
-
 }
 
 .navbar ul {
@@ -141,26 +137,30 @@ html {
 
 #company-logo {
     margin-right: 20px;
-    width: 8vh;
+    width: 6vh;
 }
+
 
 .logo-txt {
     display: flex;
     align-items: center;
-}
-
-.logo-txt {
     width: 41vh;
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     cursor: pointer;
+    color: var(--white);
 }
 
 .navbar ul li:hover {
     text-decoration: var(--white) underline;
     transition: 0.2s ease-in-out;
+}
+
+.mobile-navbar {
+    display: flex;
+    gap: 80vw;
 }
 
 
@@ -214,8 +214,8 @@ html {
 .submenu {
     visibility: hidden;
     position: fixed;
-    top: 6vh;
-    left: 72vh;
+    top: 6%;
+    left: 42%;
     width: 95vh;
     /* Initial width */
     height: 53vh;
@@ -276,6 +276,7 @@ html {
 .ec-menu li a {
     background-color: transparent;
     overflow: hidden;
+    font-size: 10px;
 }
 
 .ss-menu li a {
@@ -330,8 +331,40 @@ html {
 
 
 
+.env {
+    display: flex;
+}
+
+.environment-home {
+    width: 60vh;
+    padding: 20px;
+    border: 1px solid var(--green);
+    border-radius: 10px;
+    margin: 2vh;
+}
 
 
+
+
+.home-lca img {
+    width: 400px;
+    height: 300px;
+    object-fit: fill;
+    border-radius: 20px;
+}
+
+.env-btn {
+    border: 2px solid var(--green);
+    padding: 10px;
+    background-color: var(--white);
+    color: var(--green);
+    width: 15vh;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 1vh;
+    margin-left: 20vw;
+}
 
 
 
@@ -384,12 +417,13 @@ html {
     display: none;
     position: absolute;
     z-index: 999;
+    padding-top: 10px;
 }
 
 .dropdown-content a {
     background-color: var(--green);
     color: var(--white);
-    padding: 7px;
+    padding: 10px;
     font-weight: 700;
     font-size: 17px;
     text-decoration: none;
@@ -897,7 +931,7 @@ footer span {
 }
 
 .sublist {
-    padding: 10px;
+    padding: 5px;
     list-style: disc inside;
 }
 
@@ -1542,7 +1576,30 @@ details>summary {
 } */
 
 
+@media screen and (min-width: 2000px) {
 
+    /* Main submenu styling */
+    .submenu {
+        left: 61vw;
+        /* 50% of the viewport width */
+        transform: translateX(-50%);
+    }
+
+
+
+    /* Styling for Environmental Consultancy submenu */
+    .ec-menu {
+        left: 39%;
+    }
+
+
+
+    /* Styling for Safety Services submenu */
+    .ss-menu {
+        left: 39%;
+    }
+
+}
 
 
 
@@ -1556,44 +1613,38 @@ details>summary {
         padding: 10px;
     }
 
-    .menu-bar {
+    /* .menu-bar {
         visibility: visible;
         margin-left: 10vh;
-    }
+    } */
 
     .navbar-items {
-        visibility: hidden;
-        padding: 0;
-        margin-bottom: -100vh;
+        display: none;
+        margin-bottom: -170vw;
     }
 
     .navbar ul {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        display: none;
     }
 
     .navbar ul li {
-        display: inline-flex;
-        flex-direction: row;
-        margin: auto;
-        text-decoration: underline;
+        display: none;
     }
 
 
     /* .responsive_nav {
-        visibility: visible;
+        display: visible;
     } */
 
 
 
+    .social-icons {
+        display: none;
 
+    }
 
     .social-icons a {
-        color: var(--white);
-        margin-right: 10px;
+        display: none;
 
     }
 
@@ -1601,27 +1652,52 @@ details>summary {
 
 
     .enquiry-container {
-        display: flex;
-        justify-content: end;
-        margin-right: 30px;
+        display: none;
+        margin-right: 0;
     }
 
 
 
     .bn3637 {
-        padding: 0.1rem 0.2rem;
-        width: 18vh;
-        font-size: 13px;
-        margin-left: 0;
+        display: none;
     }
 
-    .bn38 {
+    /* .bn38 {
         border-color: transparent;
         transition: background-color 0.3s ease-in-out;
     }
 
     .bn38:hover {
         background-color: rgb(193, 193, 193);
+    } */
+
+
+
+
+    .env {
+        display: inline;
+
+    }
+
+    .environment-home {
+        width: 100%;
+        padding: 20px;
+        margin: 1vh;
+    }
+
+
+
+
+    .home-lca img {
+        object-fit: fill;
+        width: 100%;
+        border-radius: 20px;
+        width: 100%;
+    }
+
+    .env-btn {
+        margin-left: 50vw;
+        width: 20vh;
     }
 
 
@@ -1639,40 +1715,13 @@ details>summary {
         font-weight: 800;
     }
 
-    /* .cross {
 
-        display: block;
-    } */
+    .mobile-navbar {
+        display: "flex";
+        background-color: "black";
 
-
-
-
-
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: var(--green);
-        z-index: 999;
-        right: 2vh;
+        gap: 10vh
     }
-
-    .dropdown-content a {
-        padding: 10px;
-        width: 40vh;
-        font-size: 14px;
-        font-weight: 500;
-        text-decoration: underline;
-    }
-
-    .dropdown-content a:hover {
-        text-decoration: none;
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: block;
-        transition: 0.1s ease-in-out;
-    }
-
 
 
 
