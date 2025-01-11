@@ -18,7 +18,7 @@ const QuickLinks = () => {
 
                     <div className='quick-links-section1'>
                         <ul className='company-name'>
-                            <h1 >Ujjwal Engineers & Environmental Services</h1>
+                            <h1 >Ujjwal Engineers & <br /> Environmental Services</h1>
                             <h3>Environmental organization</h3>
 
                             <p>103, 14A, Kailash Nagar Rd,</p>

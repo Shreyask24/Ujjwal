@@ -77,6 +77,7 @@ const Home = () => {
                     <div className='environment-home'>
 
                         <div className='home-lca'>
+                            <h1>Life Cycle Assessment</h1>
                             <img style={{ width: "400px", height: "300px" }} src={LCA} alt="" />
 
                             <p>
@@ -97,6 +98,8 @@ const Home = () => {
                     <div className='environment-home'>
 
                         <div className='home-lca'>
+                            <h1>Environmental Monitoring & Analysis</h1>
+
                             <img src={EnvironmentalMonitoring} alt="" />
 
 
@@ -122,6 +125,8 @@ const Home = () => {
                     <div className='environment-home'>
 
                         <div className='home-lca'>
+                            <h1>Environmental Statutary Compilances</h1>
+
                             <img src={Statutory} alt="" />
                             <p>
                                 Professional services for preparation of Environment self-audit report in The format provided by MPCB and submission on EC MPCB Conducting Environmental Due Diligence, Social Due Diligence, Environmental Compliance with respect to environmental norms (MPCB/SPCB and CPCB) etc.
@@ -141,6 +146,8 @@ const Home = () => {
                     <div className='environment-home'>
 
                         <div className='home-lca'>
+                            <h1>Risk Assessment</h1>
+
                             <img src={Consequence} alt="" />
 
                             <p>At UEES, we specialize in Risk Assessment services across India, helping industries manage safety and ensure regulatory compliance. From high-risk sectors in Mumbai and Gujarat to industrial hubs in Chennai, Pune, and Hyderabad, our expert team helps identify hazards, evaluate risks, and implement customized safety solutions to ensure smooth and secure operations.</p>
@@ -153,6 +160,8 @@ const Home = () => {
                     <div className='environment-home'>
 
                         <div className='home-lca'>
+                            <h1>Workshop Facilation</h1>
+
                             <img src={Workshop2} alt="" />
                             <p>Workshop Sessions offer specialized safety workshops across India to integrate safety into every stage of your project’s lifecycle. From petrochemical industries in Gujarat to manufacturing plants in Pune, Chennai, and Hyderabad, our services ensure compliance with Health, Safety, and Environmental (HSE) regulations. By identifying potential hazards early in the design phase, we help businesses avoid costly delays and keep projects on track while maintaining a safe operational environment.</p>
                             <button className='env-btn'><Link to="/safety-services" state={{ section: "workshop-facilitation" }} style={{ fontSize: "17px", textDecoration: "none", color: "#006346" }}>Know More</Link></button>
@@ -164,6 +173,8 @@ const Home = () => {
                     <div className='environment-home'>
 
                         <div className='home-lca'>
+                            <h1>Safety Audit</h1>
+
                             <img src={SA} alt="" />
 
                             <p>

@@ -333,10 +333,14 @@ html {
 
 .env {
     display: flex;
+    justify-content: center;
     margin-left: 5vh;
 }
 
 .environment-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 60vh;
     padding: 20px;
     border: 1px solid var(--green);
@@ -344,7 +348,13 @@ html {
     margin: 2vh;
 }
 
+.home-lca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
+}
 
 
 .home-lca img {
@@ -352,6 +362,8 @@ html {
     height: 300px;
     object-fit: fill;
     border-radius: 20px;
+    margin: 2vh;
+
 }
 
 .env-btn {
@@ -1349,7 +1361,7 @@ details>summary {
 
 
 .gallery-marquee {
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
 }
 
 
@@ -1395,7 +1407,7 @@ details>summary {
 .impLinks-section ul li a,
 .impLinks-section li a {
     font-size: 20px;
-    color: var(--green);
+    color: #000;
     font-weight: 600;
     /* animation: blinking 0.5s alternate infinite; */
 }
@@ -1585,28 +1597,69 @@ details>summary {
 } */
 
 
-@media screen and (min-width: 2000px) {
+@media only screen and (min-width: 2000px) and (max-width: 2500px) {
+
 
     /* Main submenu styling */
     .submenu {
-        left: 61vw;
-        /* 50% of the viewport width */
-        transform: translateX(-50%);
+        top: 5%;
+        left: 42%;
     }
 
 
 
     /* Styling for Environmental Consultancy submenu */
     .ec-menu {
-        left: 39%;
+        top: 0;
+        left: 30%;
     }
+
 
 
 
     /* Styling for Safety Services submenu */
     .ss-menu {
-        left: 39%;
+        top: 0;
+        left: 29vh;
     }
+
+
+
+    .logo-txt {
+        padding: 0;
+        width: 20vh;
+        font-size: 13px;
+        font-weight: 800;
+    }
+
+
+    .env {
+        display: flex;
+        justify-content: center;
+    }
+
+    .environment-home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-lca {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .home-lca img {
+        width: 400px;
+        height: 300px;
+        object-fit: fill;
+        border-radius: 20px;
+        margin: 2vh;
+    }
+
 
 }
 
@@ -1621,6 +1674,8 @@ details>summary {
         justify-content: space-around;
         padding: 10px;
     }
+
+
 
     /* .menu-bar {
         visibility: visible;
@@ -1705,10 +1760,14 @@ details>summary {
     }
 
     .env-btn {
-        margin-left: 45vw;
+        margin-left: 40vw;
         width: 20vh;
     }
 
+
+    .home-lca h1 {
+        font-size: 20px;
+    }
 
 
 
@@ -1887,6 +1946,12 @@ details>summary {
         flex-wrap: wrap;
     }
 
+    .services-content h3,
+    .services-content-alternate h3 {
+        text-align: left;
+
+    }
+
     .services-content img,
     .services-content-alternate img {
         width: 100%;
@@ -1900,10 +1965,17 @@ details>summary {
         width: 100%;
     }
 
+    .service-text li {
+        text-align: start;
+    }
+
     .services-typewriter {
         margin-bottom: 10%;
     }
 
+    .services-typewriter span {
+        font-size: 10px;
+    }
 
 
     .trunky-maincontent {
