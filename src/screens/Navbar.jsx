@@ -183,10 +183,10 @@ function Navbar() {
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
-    const [openDropdown, setOpenDropdown] = React.useState(true);
-    const [openEnvironmentDropdown, setOpenEnvironmentDropdown] = React.useState(true);
-    const [openSafetyDropdown, setOpenSafetyDropdown] = React.useState(true);
-    const [openProjectDropdown, setOpenProjectDropdown] = React.useState(true);
+    const [openDropdown, setOpenDropdown] = React.useState(false);
+    const [openEnvironmentDropdown, setOpenEnvironmentDropdown] = React.useState(false);
+    const [openSafetyDropdown, setOpenSafetyDropdown] = React.useState(false);
+    const [openProjectDropdown, setOpenProjectDropdown] = React.useState(false);
 
     const handleClick = () => {
         setOpenDropdown(!openDropdown);
@@ -221,14 +221,25 @@ function Navbar() {
                             <MenuIcon style={{ color: "white" }} size="30px" />
                         </Button>
                     </div>
-                    <div>
 
-                        {
-                            toggle ?
-                                <Menu size={40} className='menu-bar' onClick={handleMenu} /> :
+                    <div className='navbar-social-icons'>
 
-                                <X size={40} className='menu-bar' onClick={handleMenu} />
-                        }
+                        <Link to="https://www.instagram.com/ujjwal_engineers?igsh=MXJiZGtwZ2U5cm1kMQ==" target='_blank'>  <Instagram size="26px" strokeWidth={2} />
+                        </Link>
+                        <Link to="https://www.facebook.com/profile.php?id=61557895696282&mibextid=ZbWKwL" target='_blank'>
+                            <Facebook strokeWidth={1.5} size="28px" />
+                        </Link>
+                        <Link to="https://youtube.com/@UjjwalEngineers?si=gJkfA1zAApnptO12" target='_blank'>
+                            <Youtube strokeWidth={1.5} size="35px" />
+                        </Link>
+                        <Link to="https://www.linkedin.com/company/ujjwal-engineers-and-environmental-services/?viewAsMember=true" target='_blank'>
+                            <Linkedin strokeWidth={1.5} size="30px" />
+                        </Link>
+                        <Link to="https://x.com/Ujjwalengineers?t=alqC_Eq-jefHB5VW74EeLA&s=08" target='_blank'>
+                            <Twitter strokeWidth={1.5} size="30px" />
+                        </Link>
+
+
                     </div>
 
 
@@ -237,7 +248,7 @@ function Navbar() {
 
 
                             <li ><Link to="/">Home</Link></li>
-                            <li ><Link to="/about">About</Link></li>
+                            <li ><Link to="/about">About Us</Link></li>
 
 
                             <li className="services-dropdown">
