@@ -15,8 +15,28 @@ import Statutory from "../assets/Statutory-Compliances.png"
 import Consequence from "../assets/Consequence.png"
 import Workshop2 from "../assets/Workshop-2.jpg"
 import SA from "../assets/Safety-Audit.png"
-
-
+import logo1 from "../assets/logo1.png"
+import logo2 from "../assets/logo2.png"
+import logo3 from "../assets/logo3.png"
+import logo4 from "../assets/logo4.png"
+import logo5 from "../assets/logo5.png"
+import logo6 from "../assets/logo6.png"
+import logo7 from "../assets/logo7.png"
+import logo8 from "../assets/logo8.png"
+import logo9 from "../assets/logo9.png"
+import logo10 from "../assets/logo10.png"
+import logo11 from "../assets/logo11.png"
+import logo12 from "../assets/logo12.png"
+import logo13 from "../assets/logo13.png"
+import logo14 from "../assets/logo14.png"
+import logo15 from "../assets/logo15.png"
+import logo16 from "../assets/logo16.png"
+import logo17 from "../assets/logo17.png"
+import logo18 from "../assets/logo18.png"
+import logo19 from "../assets/logo19.png"
+import logo20 from "../assets/logo20.png"
+import logo21 from "../assets/logo21.png"
+import logo22 from "../assets/logo22.png"
 
 
 
@@ -190,6 +210,58 @@ const Home = () => {
 
                     </div>
 
+                </div>
+
+                <div className="gallery-marquee-home">
+                    <div className='marquee-heading-home'>
+                        <h1>Empowering Success Through Collaboration and Service Excellence.</h1>
+                    </div>
+
+
+
+                    <div className='marquee-section-home'>
+
+
+                        <marquee behavior="scroll" direction="left"
+                            scrollamount="6" loop="infinite">
+
+                            <img src={logo16} alt="anthea group" />
+                            <img src={logo17} alt="future bridge" />
+                            <img src={logo18} alt="bhor" />
+                            <img src={logo21} alt="drt anthea aroma chemicals" />
+
+
+                            <img src={logo6} alt="excel" />
+
+                            <img src={logo8} alt="ravika organic pvt. ltd." />
+
+                            <img src={logo12} alt="lupin" />
+                            <img src={logo13} alt="arvind fashioning possibilities" />
+                            <img src={logo1} alt="bec chemicals" />
+
+                            <img src={logo3} alt="hikal" />
+                            <img src={logo4} alt="spectrum ethers pvt. ltd." />
+                            <img src={logo5} alt="innovassynth" />
+
+                            <img src={logo7} alt="deepak" />
+                            <img src={logo9} alt="orange city steel industries pvt. ltd." />
+                            <img src={logo11} alt="ipca" />
+
+                            <img src={logo14} alt="p&g" />
+                            <img src={logo15} alt="upl" />
+                            <img src={logo2} alt="Aarti Drugs Ltd." />
+
+                            <img src={logo10} alt="ashu organics" />
+
+                            <img src={logo19} alt="go green mechanisms pvt ltd" />
+                            <img src={logo20} alt="mahabal enviro engineers pvt ltd" />
+
+                            <img src={logo22} alt="hse" />
+
+
+                        </marquee>
+
+                    </div>
                 </div>
 
                 <QuickLinks />

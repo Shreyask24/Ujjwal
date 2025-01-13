@@ -971,9 +971,10 @@ footer span {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: justify;
     padding: 30px;
 }
+
+
 
 .safety-services-alt {
     background-color: var(--green);
@@ -1016,15 +1017,18 @@ details {
 
 details p {
     margin-top: 10px;
+    text-align: justify;
 }
 
 .summary1 {
     list-style-type: "";
 }
 
+
 .summary1 h1 {
     color: var(--green);
     margin-bottom: 10px;
+    text-align: start;
 }
 
 details>summary {
@@ -1061,6 +1065,7 @@ details>summary {
 
 .details-1 li {
     margin-top: 5px;
+    text-align: start;
 }
 
 .subdetails {
@@ -1358,10 +1363,41 @@ details>summary {
 }
 
 
+/* Home */
+.gallery-marquee-home {
+    margin: 2vh;
+    border: 1px solid var(--green);
+    border-radius: 10px;
+}
+
+.marquee-heading-home {
+    padding: 20px;
+
+}
+
+.marquee-heading-home h1 {
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.gallery-marquee-home marquee img {
+    width: 20%;
+    object-fit: contain;
+    align-items: center;
+    margin-right: 20vh;
+    margin-top: 2vh;
+}
 
 
+
+
+
+
+
+/* Gallery */
 .gallery-marquee {
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
 }
 
 
@@ -2114,9 +2150,9 @@ details>summary {
 
 
 
-    .gallery-marquee {
+    /* .gallery-marquee {
         margin-bottom: 40vh;
-    }
+    } */
 
 
 

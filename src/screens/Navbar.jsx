@@ -248,7 +248,7 @@ function Navbar() {
 
 
                             <li ><Link to="/">Home</Link></li>
-                            <li ><Link to="/about">About Us</Link></li>
+                            <li ><Link to="/about">About us</Link></li>
 
 
                             <li className="services-dropdown">
@@ -302,7 +302,7 @@ function Navbar() {
                             </div>
                             <li><Link to="/career">Career</Link></li>
                             <li><Link to="/gallery">Gallery</Link></li>
-                            <li><Link to="/contact">Contact Us</Link></li>
+                            <li><Link to="/contact">Contact us</Link></li>
                         </ul>
 
                     </div>
@@ -366,7 +366,7 @@ function Navbar() {
                             <ListItem disablePadding>
                                 <ListItemButton>
                                     <ListItemText>
-                                        <Link to="/about" style={{ color: "white" }}>About</Link>
+                                        <Link to="/about" style={{ color: "white" }}>About us</Link>
                                     </ListItemText>
                                 </ListItemButton>
                             </ListItem>
@@ -565,7 +565,7 @@ function Navbar() {
                             <ListItem disablePadding>
                                 <ListItemButton>
                                     <ListItemText>
-                                        <Link to="/contact" style={{ color: "white" }}>Contact Us</Link>
+                                        <Link to="/contact" style={{ color: "white" }}>Contact us</Link>
                                     </ListItemText>
 
                                 </ListItemButton>
