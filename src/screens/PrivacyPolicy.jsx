@@ -11,65 +11,75 @@ const PrivacyPolicy = () => {
                 <Navbar />
 
                 <div className='privacy-policy'>
-                    <h3> Effective Date: 01/01/2025</h3>
 
-                    <h3>Welcome to Ujjwal Engineers! We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you interact with our website and services.</h3>
+                    <h2>Web Site Terms and Conditions of Use and Privacy Policy
+                    </h2>
+
+                    <h3>
+                        By accessing the website of Ujjwal Engineers & Environmental Services, you agree to the following terms and conditions, as well as the privacy practices outlined below. These terms are governed by applicable laws and regulations. If you disagree with any of these terms, you are prohibited from using this website.
+                    </h3>
+
+                    <li>
+                        <b>Terms of Use and License: </b>
+                        Permission is granted to temporarily download one copy of the materials on this website for personal, non-commercial use only. This limited license does not transfer ownership and prohibits:
+
+                        <li>Modifying, copying, or mirroring materials.</li>
+                        <li>Modifying, copying, or mirroring materials.</li>
+                        <li>Using materials for commercial or public purposes.</li>
+                        <li>Attempting to reverse-engineer any software.</li>
+                        <li>Removing copyright or proprietary notices.</li>
+                        <li>This license may be terminated if these terms are violated, requiring the destruction of any downloaded materials.</li>
+
+
+                    </li>
+
+                    <li>
+                        <b>Disclaimer and Limitations of Liability: </b>
+                        All materials on the website are provided "as is" without warranties of any kind, including implied warranties of merchantability or fitness for a particular purpose. Ujjwal Engineers & Environmental Services is not liable for any damages (e.g., loss of data, business interruption) resulting from the use of the website, even if informed of potential damages.
+
+                    </li>
+
+                    <li>
+                        <b>Accuracy and Amendments:</b>
+                        The website’s materials may contain inaccuracies or errors. Ujjwal Engineers & Environmental Services reserves the right to update content without notice but does not guarantee accuracy or completeness.
+
+                    </li>
+
+                    <li>
+                        <b>External Links: </b>
+                        Third-party links on this website are provided for convenience. Ujjwal Engineers & Environmental Services does not endorse or take responsibility for the content or privacy practices of linked websites.
+
+                    </li>
+
+                    <li>
+                        <b>Modifications to Terms: </b>
+                        These terms may be revised at any time without notice. By using the website, you agree to the current version of the terms.
+
+                    </li>
+
+                    <li>
+                        <b>Governing Law: </b>
+                        These terms and any related claims are governed by the laws of India.
+
+                    </li>
+
+                    <li>
+                        <b>Privacy Policy: </b>
+                        Your privacy is important to us. We collect and use personal information as outlined below:
+
+                    </li>
+
 
                     <li>
                         <b>Information We Collect: </b>
-                        We may collect the following types of information through our website:
 
-                        Personal Information: Includes your name, email address, phone number, and any other details you provide when filling out our contact or hiring forms.
-                        Automatically Collected Information: Technical information such as your IP address, browser type, operating system, and browsing behavior on our website (collected via cookies).
+                        <li>Personal Information: Provided via forms, such as your name, email, and phone number.</li>
+                        <li>Automatically Collected Information: Technical data (e.g., IP address, browser type) collected via cookies.</li>
+                        <li>Respond to inquiries and facilitate recruitment. </li>
+                        <li>Communicate updates, offers, and services. </li>
+                        <li>Improve website functionality and user experience. </li>
+                        <li><b>Sharing and Security of Data:</b> Data is shared only with trusted service providers or as required by law. We employ security measures to protect your data, though absolute security cannot be guaranteed. </li>
 
-                    </li>
-
-                    <li>
-                        <b>How We Use Your Information: </b>
-                        The data collected through our forms is used for the following purposes:
-
-                        Hiring Purposes: To assess and contact candidates for potential job opportunities.
-                        Marketing Purposes: To communicate updates, offers, and other promotional materials related to our services.
-                        Improving Our Website: To analyze and enhance user experience.
-                    </li>
-
-                    <li>
-                        <b>How We Share Your Information</b>
-                        We do not sell, trade, or rent your personal information to third parties. However, we may share your data in the following circumstances:
-
-                        Service Providers: With trusted third-party vendors who assist in operating our website or services.
-                        Legal Requirements: If required by law or to protect our legal rights.
-                    </li>
-
-                    <li>
-                        <b>Data Security: </b>
-                        We implement appropriate security measures to protect your personal data from unauthorized access, alteration, or disclosure. However, no method of data transmission or storage is 100% secure, and we cannot guarantee absolute security.
-                    </li>
-
-                    <li>
-                        <b>Your Rights: </b>
-
-                        You have the following rights regarding your personal data:
-
-                        Access and Correction: You can request access to the data we hold about you and request corrections if necessary.
-                        Withdrawal of Consent: You can opt out of receiving marketing communications at any time by contacting us at the email provided below.
-                    </li>
-
-                    <li>
-                        <b>Cookies: </b>
-                        Our website uses cookies to improve your browsing experience. You can control your cookie preferences through your browser settings.
-                    </li>
-
-                    <li>
-                        <b>Third-Party Links: </b>
-                        Our website may contain links to external websites. We are not responsible for the privacy practices or content of these third-party sites.
-                    </li>
-
-
-                    <li>
-                        <b>Changes to This Privacy Policy: </b>
-
-                        We may update this Privacy Policy from time to time. Changes will be posted on this page with the updated effective date.
                     </li>
                     <li>
                         <b>Contact Us: </b>
@@ -77,7 +87,7 @@ const PrivacyPolicy = () => {
 
                         <Link style={{ color: "#006346", marginRight: "5px" }} to="mailto:info@ujjwalengineers.com">info@ujjwalengineers.com</Link>
                         <Link style={{ color: "#006346" }} to="whatsapp://send/?phone=+919867215033">+91 9867215033</Link>
-                        Thank you for trusting Ujjwal Engineers with your information!
+                        By using this website, you consent to these terms and privacy practices.
                     </li>
 
 
