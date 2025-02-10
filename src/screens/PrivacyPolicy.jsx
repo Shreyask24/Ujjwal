@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from './Navbar'
 import QuickLinks from './QuickLinks'
 import { Link } from 'react-router-dom'
 
 const PrivacyPolicy = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to top on component mount
+    }, []);
+
     return (
         <section>
-
             <div>
                 <Navbar />
 
