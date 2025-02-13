@@ -60,6 +60,11 @@ const Contact = () => {
                 setLoading(false);
                 alert("Thank you. I Will Get Back To You As Soon As Possible.")
 
+                // Google Ads Event Snippet
+                window.gtag('event', 'conversion', {
+                    'send_to': 'AW-16864448452/exKICK-WhpwaEMSfzOk-',
+                });
+
                 setForm({
                     name: '',
                     email: '',
@@ -126,7 +131,11 @@ const Contact = () => {
                             <h1>Ujjwal Engineers & Environmental Services</h1>
                             {/* <h3>Environmental organization</h3> */}
                             <p>
-                                103, 14A, Kailash Nagar Rd, Kailash Nagar, Shivaji Nagar, Ambernath, Maharashtra 421501
+                                103, 14A, Kailash Nagar, Ambernath (E),
+                                <p>
+                                    Dist.Thane, Maharashtra 421501, India
+                                </p>
+
                             </p>
 
                             <div className='contact-address'>
@@ -138,11 +147,6 @@ const Contact = () => {
                         </ul>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.9222860915356!2d73.18534817510357!3d19.198596382031322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be793006685e40b%3A0xe2684d3774f88041!2sUjjwal%20Engineers%20and%20Environmental%20Services!5e0!3m2!1sen!2sin!4v1712151137540!5m2!1sen!2sin" className='google-maps' allowFullScreen loading="lazy" ></iframe>
                     </div>
-
-
-
-
-
 
                 </div>
 

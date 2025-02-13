@@ -91,8 +91,11 @@ const Home = () => {
 
                 </div>
 
-                <div className='env'>
+                <div data-aos="fade-in" data-aos-once='true' data-aos-duration="2000" className='about-title'>
+                    <h1>Our Services</h1>
+                </div>
 
+                <div className='env'>
 
                     <div className='environment-home'>
 
@@ -101,7 +104,9 @@ const Home = () => {
                             <img style={{ width: "400px", height: "300px" }} src={LCA} alt="" />
 
                             <p>
-                                One of the most common methodologies for quantifying sustainability is life cycle assessment (LCA). An LCA is a systematic analysis of environmental impact over the course of the entire life cycle of a product, material, process, or other measurable activity.
+                                At UEES, we specialize in Life Cycle Assessment (LCA) to quantify sustainability and environmental impact. Our systematic analysis covers the entire life cycle of products, materials, and processes, helping industries make data-driven decisions for sustainable development.
+
+
                             </p>
 
 
@@ -117,22 +122,16 @@ const Home = () => {
 
                     <div className='environment-home'>
 
+
                         <div className='home-lca'>
-                            <h1>Environmental Monitoring & Analysis</h1>
+                            <h1>Environmental Monitoring</h1>
 
                             <img src={EnvironmentalMonitoring} alt="" />
 
 
                             <p>
-                                <li className="sublist">Ambient Air Monitoring and Analysis.</li>
+                                We provide comprehensive environmental monitoring services, including Ambient Air Quality Analysis, Stack Emissions Testing, Wastewater & Drinking Water Analysis, and Noise Level Monitoring. Our expertise ensures environmental safety across industries.
 
-                                <li className="sublist">Source / Stack Monitoring and Analysis.</li>
-
-
-                                <li className="sublist">Water / Waste water Analysis.</li>
-
-                                <li className="sublist">Drinking Water.</li>
-                                <li className="sublist">Noise Monitoring.</li>
 
                             </p>
 
@@ -145,11 +144,12 @@ const Home = () => {
                     <div className='environment-home'>
 
                         <div className='home-lca'>
-                            <h1>Environmental Statutary Compilances</h1>
+                            <h1>Environmental Compilances</h1>
 
                             <img src={Statutory} alt="" />
                             <p>
-                                Professional services for preparation of Environment self-audit report in The format provided by MPCB and submission on EC MPCB Conducting Environmental Due Diligence, Social Due Diligence, Environmental Compliance with respect to environmental norms (MPCB/SPCB and CPCB) etc.
+                                Our expert team assists in Environment Self-Audit Report Preparation, as per PCB format, ensuring smooth submission. We conduct Environmental & Social Due Diligence, compliance audits, and help businesses meet SPCB & CPCB norms for sustainable operations.
+
                             </p>
 
                             <button className='env-btn'><Link to="/services" state={{ section: "statutory-compliances" }} style={{ fontSize: "17px", textDecoration: "none", color: "#006346" }}>Know More</Link></button>
@@ -170,7 +170,8 @@ const Home = () => {
 
                             <img src={Consequence} alt="" />
 
-                            <p>At UEES, we specialize in Risk Assessment services across India, helping industries manage safety and ensure regulatory compliance. From high-risk sectors in Mumbai and Gujarat to industrial hubs in Chennai, Pune, and Hyderabad, our expert team helps identify hazards, evaluate risks, and implement customized safety solutions to ensure smooth and secure operations.</p>
+                            <p>At UEES, we offer Risk Assessment services across India, ensuring industrial safety & regulatory compliance. From Mumbai & Gujarat to Chennai, Pune & Hyderabad, our experts identify hazards, evaluate risks, and implement tailored safety solutions for seamless operations.
+                            </p>
                             <button className='env-btn'><Link to="/safety-services" state={{ section: "risk-assessment" }} style={{ fontSize: "17px", textDecoration: "none", color: "#006346" }}>Know More</Link></button>
                         </div>
 
@@ -183,7 +184,8 @@ const Home = () => {
                             <h1>Workshop Facilation</h1>
 
                             <img src={Workshop2} alt="" />
-                            <p>Workshop Sessions offer specialized safety workshops across India to integrate safety into every stage of your project’s lifecycle. From petrochemical industries in Gujarat to manufacturing plants in Pune, Chennai, and Hyderabad, our services ensure compliance with Health, Safety, and Environmental (HSE) regulations. By identifying potential hazards early in the design phase, we help businesses avoid costly delays and keep projects on track while maintaining a safe operational environment.</p>
+                            <p>We conduct specialized safety workshops to integrate HSE compliance into every project phase. Serving petrochemical hubs in Gujarat & manufacturing plants in Pune, Chennai & Hyderabad, we help businesses identify risks early, prevent delays, and maintain a safe work environment.
+                            </p>
                             <button className='env-btn'><Link to="/safety-services" state={{ section: "workshop-facilitation" }} style={{ fontSize: "17px", textDecoration: "none", color: "#006346" }}>Know More</Link></button>
                         </div>
 
@@ -198,12 +200,7 @@ const Home = () => {
                             <img src={SA} alt="" />
 
                             <p>
-                                <b>Key Features:</b>
-                                <li><b>Customized Audits: </b> Aligned with your industry and regulatory standards.</li>
-                                <li><b>Compliance Assurance:</b> Meet OSHA, ISO 45001, and more.</li>
-                                <li><b>Risk Evaluation:</b> Detect hazards in processes and conditions.</li>
-                                <li><b>Training Review:</b> Assess and improve safety training.</li>
-                                <li><b>Detailed Reports:</b> Insights and action plans for improvement.</li>
+                                At UEES, we conduct in-depth Safety Audits to ensure compliance with OSHA, ISO 45001 & local regulations. We assess process hazards, training effectiveness, and provide detailed reports with actionable insights, helping businesses maintain a safe and compliant workplace.
                             </p>
                             <button className='env-btn'><Link to="/safety-services" state={{ section: "safety-audit" }} style={{ fontSize: "17px", textDecoration: "none", color: "#006346" }}>Know More</Link></button>
                         </div>

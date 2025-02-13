@@ -1,148 +1,3 @@
-// import React, { useRef, useState } from 'react'
-
-// import UEESLogo from "../assets/UEES-Logo.png"
-// import { Link, useNavigate } from 'react-router-dom'
-
-// import { Instagram, Youtube, ChevronDown, Facebook, Twitter, X, Menu, Linkedin } from 'lucide-react';
-
-
-// const Navbar = () => {
-//     const navigate = useNavigate();
-
-//     const navItems = useRef();
-
-//     const [toggle, setToggle] = useState(true)
-
-//     const handleMenu = () => {
-//         setToggle(!toggle)
-//         navItems.current.classList.toggle("navbar-items")
-
-//     }
-
-
-
-//     return (
-//         <div >
-//             <nav className='navbar'>
-
-//                 <div className='logo-txt'>
-//                     <img onClick={() => navigate("/")} src={UEESLogo} alt="company-logo" id='company-logo' />
-//                     <h1 onClick={() => navigate("/")} className='logo-txt'>Ujjwal Engineers & Environmental Services</h1>
-//                 </div>
-//                 <div>
-
-//                     {
-//                         toggle ?
-//                             <Menu size={40} className='menu-bar' onClick={handleMenu} /> :
-
-//                             <X size={40} className='menu-bar' onClick={handleMenu} />
-//                     }
-//                 </div>
-
-
-//                 <div className='navbar-items' ref={navItems}>
-//                     <ul>
-
-
-//                         <li ><Link to="/">Home</Link></li>
-//                         <li ><Link to="/about">About</Link></li>
-
-
-//                         <li className="services-dropdown">
-//                             <Link>Services</Link>
-//                             <button className="dropbtn">
-//                                 <ChevronDown size={16} strokeWidth={5} />
-//                             </button>
-//                             <ul className="submenu">
-//                                 <li className="ec-dropdown">
-//                                     <a href="#" style={{ fontSize: "18px" }}>Environmental Consultancy</a>
-//                                     <ul className="ec-menu">
-//                                         <li><Link to="/services" state={{ section: "life-cycle-assessment" }} style={{ fontSize: "17px" }}>Life Cycle Assessment</Link></li>
-//                                         <li><Link to="/services" state={{ section: "product-carbon-footprint" }} style={{ fontSize: "17px" }}>Product Carbon Footprint</Link></li>
-//                                         <li><Link to="/services" state={{ section: "greenhouse-gas-emission" }} style={{ fontSize: "17px" }}>Greenhouse Gas Emission</Link></li>
-//                                         <li><Link to="/services" state={{ section: "environmental-clearance" }} style={{ fontSize: "17px" }}>Environmental Clearance (EC/EIA)</Link></li>
-//                                         <li><Link to="/services" state={{ section: "consent-to-establish" }} style={{ fontSize: "17px" }}>Consent to Establish / Consent to Operate</Link></li>
-//                                         <li><Link to="/services" state={{ section: "environmental-audit" }} style={{ fontSize: "17px" }}>Environmental Audit</Link></li>
-//                                         <li><Link to="/services" state={{ section: "statutory-compliances" }} style={{ fontSize: "17px" }}>Statutory Compliances</Link></li>
-//                                         <li><Link to="/services" state={{ section: "environmental-monitoring-and-analysis" }} style={{ fontSize: "17px" }}>Environmental Monitoring and Analysis</Link></li>
-//                                         <li><Link to="/services" state={{ section: "epr" }} style={{ fontSize: "17px" }}>Extended Producer Responsibility (EPR)</Link></li>
-//                                     </ul>
-//                                 </li>
-//                                 <li className="ss-dropdown">
-//                                     <a href="#" style={{ fontSize: "18px" }}>Safety Services Consultancy</a>
-//                                     <ul className="ss-menu">
-//                                         <li><Link to="/safety-services" state={{ section: "risk-assessment" }} style={{ fontSize: "17px" }}>Risk Assessment</Link></li>
-//                                         <li><Link to="/safety-services" state={{ section: "workshop-facilitation" }} style={{ fontSize: "17px" }}>Workshop Facilitation</Link></li>
-//                                         <li><Link to="/safety-services" state={{ section: "functional-safety-services" }} style={{ fontSize: "17px" }}>Functional Safety Services</Link></li>
-//                                         <li><Link to="/safety-services" state={{ section: "other-safety-workshop-services" }} style={{ fontSize: "17px" }}>Other Safety Workshop Services</Link></li>
-//                                         <li><Link to="/safety-services" state={{ section: "other-safety-desktop-studies" }} style={{ fontSize: "17px" }}>Other Safety Desktop Studies</Link></li>
-//                                         <li><Link to="/safety-services" state={{ section: "safety-audit" }} style={{ fontSize: "17px" }}>Safety Audit</Link></li>
-//                                         <li><Link to="/safety-services" state={{ section: "energy-audit" }} style={{ fontSize: "17px" }}>Energy Audit</Link></li>
-//                                     </ul>
-//                                 </li>
-//                             </ul>
-//                         </li>
-
-
-
-//                         <div className="dropdown">
-//                             <a className='nav-anchor' href=""> Projects</a>
-//                             <button className="dropbtn"><ChevronDown size={16} strokeWidth={5} /></button>
-//                             <div className="dropdown-content">
-//                                 <Link to="/projects" state={{ section: "etp" }}>Effluent Treatment Plant (ETP)</Link>
-//                                 <Link to="/projects" state={{ section: "mee" }}>Multiple Effect Evaporator (MEE)</Link>
-//                                 <Link to="/projects" state={{ section: "mvre" }}>Mechanical Vapor Recompression (MVRE)</Link>
-//                                 <Link to="/projects" state={{ section: "atfd" }}>Agitated Thin Film Dryer (ATFD)</Link>
-//                                 <Link to="/projects" state={{ section: "stp" }}>Sewage Treatment Plant (STP)</Link>
-//                                 <Link to="/projects" state={{ section: "ro" }}>Reverse Osmosis Plant (RO)</Link>
-//                             </div>
-//                         </div>
-//                         <li><Link to="/career">Career</Link></li>
-//                         <li><Link to="/gallery">Gallery</Link></li>
-//                         <li><Link to="/contact">Contact Us</Link></li>
-//                     </ul>
-
-//                 </div>
-//                 <div className='enquiry-container'>
-//                     <div className='social-icons'>
-
-//                         <Link to="https://www.instagram.com/ujjwal_engineers?igsh=MXJiZGtwZ2U5cm1kMQ==" target='_blank'>  <Instagram size="26px" strokeWidth={2} />
-//                         </Link>
-//                         <Link to="https://www.facebook.com/profile.php?id=61557895696282&mibextid=ZbWKwL" target='_blank'>
-//                             <Facebook strokeWidth={1.5} size="28px" />
-//                         </Link>
-//                         <Link to="https://youtube.com/@UjjwalEngineers?si=gJkfA1zAApnptO12" target='_blank'>
-//                             <Youtube strokeWidth={1.5} size="35px" />
-//                         </Link>
-//                         <Link to="https://www.linkedin.com/company/ujjwal-engineers-and-environmental-services/?viewAsMember=true" target='_blank'>
-//                             <Linkedin strokeWidth={1.5} size="30px" />
-//                         </Link>
-//                         <Link to="https://x.com/Ujjwalengineers?t=alqC_Eq-jefHB5VW74EeLA&s=08" target='_blank'>
-//                             <Twitter strokeWidth={1.5} size="30px" />
-//                         </Link>
-//                     </div>
-
-//                 </div>
-//                 <Link to="/contact"><button className='bn3637 bn38'>Make Enquiry</button></Link>
-
-
-
-
-//             </nav >
-
-//         </ div >
-//     )
-// }
-
-// export default Navbar
-
-
-
-
-
-
-
-
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
@@ -224,19 +79,19 @@ function Navbar() {
 
                     <div className='navbar-social-icons'>
 
-                        <Link to="https://www.instagram.com/ujjwal_engineers?igsh=MXJiZGtwZ2U5cm1kMQ==" target='_blank'>  <Instagram size="26px" strokeWidth={2} />
+                        <Link to="https://www.instagram.com/ujjwal_engineers?igsh=MXJiZGtwZ2U5cm1kMQ==" target='_blank'>  <Instagram size="22px" strokeWidth={2} />
                         </Link>
                         <Link to="https://www.facebook.com/profile.php?id=61557895696282&mibextid=ZbWKwL" target='_blank'>
-                            <Facebook strokeWidth={1.5} size="28px" />
+                            <Facebook strokeWidth={1.5} size="24px" />
                         </Link>
                         <Link to="https://youtube.com/@UjjwalEngineers?si=gJkfA1zAApnptO12" target='_blank'>
-                            <Youtube strokeWidth={1.5} size="35px" />
+                            <Youtube strokeWidth={1.5} size="26px" />
                         </Link>
                         <Link to="https://www.linkedin.com/company/ujjwal-engineers-and-environmental-services/?viewAsMember=true" target='_blank'>
-                            <Linkedin strokeWidth={1.5} size="30px" />
+                            <Linkedin strokeWidth={1.5} size="26px" />
                         </Link>
                         <Link to="https://x.com/Ujjwalengineers?t=alqC_Eq-jefHB5VW74EeLA&s=08" target='_blank'>
-                            <Twitter strokeWidth={1.5} size="30px" />
+                            <Twitter strokeWidth={1.5} size="26px" />
                         </Link>
 
 
@@ -348,13 +203,13 @@ function Navbar() {
                     aria-describedby="modal-modal-description"
                 >
                     <Box
-                        sx={{ backgroundColor: "#006346", width: 300, height: "100%", marginLeft: "20vw" }}
+                        sx={{ backgroundColor: "#006346", width: 250, height: "100%", marginLeft: "20vw" }}
                         role="presentation"
                     >
 
 
-                        <List sx={{ display: "flex", justifyContent: "flex-end", flexDirection: "column" }}>
-                            <ListItem disablePadding>
+                        <List sx={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+                            <ListItem sx={{ display: "flex", flexDirection: "column" }} disablePadding>
                                 <ListItemButton>
                                     <ListItemText >
                                         <Link to="/" style={{ color: "white" }}>Home</Link>
@@ -363,15 +218,16 @@ function Navbar() {
                                 </ListItemButton>
                             </ListItem>
 
-                            <ListItem disablePadding>
+                            <ListItem sx={{ display: "flex", flexDirection: "column" }} disablePadding>
                                 <ListItemButton>
                                     <ListItemText>
                                         <Link to="/about" style={{ color: "white" }}>About us</Link>
                                     </ListItemText>
                                 </ListItemButton>
                             </ListItem>
-                            <ListItem sx={{ display: "flex", flexDirection: "column" }} disablePadding>
-                                <ListItemButton sx={{ marginRight: "30vh" }} onClick={handleClick}>
+
+                            <ListItem sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }} disablePadding>
+                                <ListItemButton onClick={handleClick}>
                                     <ListItemText sx={{ color: "white" }} primary="Services" />
                                     {openDropdown ? <ExpandLess sx={{ color: "white" }} /> : <ExpandMore sx={{ color: "white" }} />}
                                 </ListItemButton>
@@ -496,7 +352,7 @@ function Navbar() {
                                 </Collapse>
 
 
-                                <ListItemButton sx={{ marginRight: "30vh" }} onClick={handleProjectClick}>
+                                <ListItemButton onClick={handleProjectClick}>
                                     <ListItemText sx={{ color: "white" }}> Projects</ListItemText>
                                     {openProjectDropdown ? <ExpandLess sx={{ color: "white" }} /> : <ExpandMore sx={{ color: "white" }} />}
                                 </ListItemButton>
@@ -548,7 +404,7 @@ function Navbar() {
 
                             <ListItem disablePadding>
                                 <ListItemButton>
-                                    <ListItemText>
+                                    <ListItemText sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
                                         <Link to="/career" style={{ color: "white" }}>Career</Link>
                                     </ListItemText>
 
@@ -556,7 +412,7 @@ function Navbar() {
                             </ListItem>
                             <ListItem disablePadding>
                                 <ListItemButton>
-                                    <ListItemText>
+                                    <ListItemText sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
                                         <Link to="/gallery" style={{ color: "white" }}>Gallery</Link>
                                     </ListItemText>
 
@@ -564,7 +420,7 @@ function Navbar() {
                             </ListItem>
                             <ListItem disablePadding>
                                 <ListItemButton>
-                                    <ListItemText>
+                                    <ListItemText sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
                                         <Link to="/contact" style={{ color: "white" }}>Contact us</Link>
                                     </ListItemText>
 
@@ -573,69 +429,20 @@ function Navbar() {
 
                         </List>
                         <Divider sx={{ marginTop: "23vh", backgroundColor: "white" }} />
-                        <List sx={{ display: "flex", marginLeft: "2vh" }}>
-                            <ListItem disablePadding>
-                                <ListItemButton disableRipple disableGutters disableTouchRipple>
-                                    <ListItemText>
-                                        <Link to="https://www.instagram.com/ujjwal_engineers?igsh=MXJiZGtwZ2U5cm1kMQ==" target='_blank' style={{ color: "white" }}>  <Instagram size="25px" strokeWidth={2} />
-                                        </Link>
-                                    </ListItemText>
 
-                                </ListItemButton>
-                            </ListItem>
+                        <List sx={{ display: "flex", marginLeft: "2vh", marginTop: "2vh" }}>
                             <ListItem disablePadding>
-                                <ListItemButton disableRipple disableGutters disableTouchRipple>
-                                    <ListItemText>
-                                        <Link to="https://www.facebook.com/profile.php?id=61557895696282&mibextid=ZbWKwL" target='_blank' style={{ color: "white" }}>
-                                            <Facebook strokeWidth={1.5} size="25px" />
-                                        </Link>
-                                    </ListItemText>
-
-                                </ListItemButton>
-                            </ListItem>
-                            <ListItem disablePadding>
-                                <ListItemButton disableRipple disableGutters disableTouchRipple>
-                                    <ListItemText>
-                                        <Link to="https://youtube.com/@UjjwalEngineers?si=gJkfA1zAApnptO12" target='_blank' style={{ color: "white" }}>
-                                            <Youtube strokeWidth={1.5} size="25px" />
-                                        </Link>
-                                    </ListItemText>
-
-                                </ListItemButton>
-                            </ListItem>
-                            <ListItem disablePadding>
-                                <ListItemButton disableRipple disableGutters disableTouchRipple>
-                                    <ListItemText>
-                                        <Link to="https://www.linkedin.com/company/ujjwal-engineers-and-environmental-services/?viewAsMember=true" target='_blank' style={{ color: "white" }}>
-                                            <Linkedin strokeWidth={1.5} size="25px" />
-                                        </Link>
-                                    </ListItemText>
-
-                                </ListItemButton>
-                            </ListItem>
-                            <ListItem disablePadding>
-                                <ListItemButton disableRipple disableGutters disableTouchRipple>
-                                    <ListItemText>
-                                        <Link to="https://x.com/Ujjwalengineers?t=alqC_Eq-jefHB5VW74EeLA&s=08" target='_blank' style={{ color: "white" }}>
-                                            <Twitter strokeWidth={1.5} size="25px" />
-                                        </Link>
-                                    </ListItemText>
-
-                                </ListItemButton>
+                                <Link style={{ color: "white" }} to="mailto:info@ujjwalengineers.com">info@ujjwalengineers.com</Link>
                             </ListItem>
 
 
                         </List>
                         <ListItem disablePadding>
-                            <ListItemButton disableRipple disableGutters disableTouchRipple>
-                                <ListItemText>
-                                    <Link to="/contact">
-                                        <Button sx={{ padding: "0.1rem 0.2rem", width: "18vh", fontSize: "13px", backgroundColor: "white", fontFamily: "sans-serif", marginLeft: "2vh", color: "#006346" }}>Make Enquiry</Button>
-                                    </Link>
+                            <List sx={{ marginLeft: "2vh" }}>
 
-                                </ListItemText>
+                                <Link style={{ color: "white" }} to="whatsapp://send/?phone=+919867215033">+91-9867215033</Link>
+                            </List>
 
-                            </ListItemButton>
                         </ListItem>
 
                     </Box>

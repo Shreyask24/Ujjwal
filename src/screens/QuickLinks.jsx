@@ -21,9 +21,9 @@ const QuickLinks = () => {
                             <h1 >Ujjwal Engineers & <br /> Environmental Services</h1>
                             <h3>Environmental organization</h3>
 
-                            <p>103, 14A, Kailash Nagar Rd,</p>
-                            <p>Kailash Nagar, Shivaji Nagar Ambernath,</p>
-                            <p>Maharashtra 421501</p>
+                            <p>103, 14A, Kailash Nagar,</p>
+                            <p> Ambernath (E), Dist. Thane</p>
+                            <p>Maharashtra 421501, India</p>
 
                             <div className='address'>
                                 <Link to="mailto:info@ujjwalengineers.com">info@ujjwalengineers.com</Link>

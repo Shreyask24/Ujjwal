@@ -366,6 +366,10 @@ html {
 
 }
 
+.home-lca p {
+    text-align: justify;
+}
+
 .env-btn {
     border: 2px solid var(--green);
     padding: 10px;
@@ -375,7 +379,7 @@ html {
     border-radius: 20px;
     cursor: pointer;
     font-size: 15px;
-    margin-top: 1vh;
+    margin-top: 2vh;
     margin-left: 16vw;
 }
 
@@ -1520,122 +1524,6 @@ details>summary {
     padding: 5px;
 }
 
-
-
-
-/* @media screen and (max-width: 1500px) {
-
-    .section-title {
-        overflow-y: hidden;
-    }
-
-    .section-title h1 {
-        overflow-y: hidden;
-    }
-
-
-    .navbar {
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        margin: auto;
-        overflow-y: hidden;
-
-    }
-
-
-
-    .navbar ul li {
-        padding: 0;
-        flex-wrap: wrap;
-        margin-right: 0;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 20px;
-        text-decoration: none;
-    }
-
-
-    .navbar ul li a {
-
-        padding: 0;
-        flex-wrap: wrap;
-        text-decoration: none;
-        font-size: 19px;
-    }
-
-
-
-
-
-
-
-    .enquiry-container {
-        display: flex;
-        justify-content: end;
-        margin-right: 30px;
-    }
-
-
-
-    .bn3637 {
-        padding: 0.1rem 0.2rem;
-        width: 18vh;
-        font-size: 13px;
-        margin-left: 8vh;
-    }
-
-    .bn38 {
-        border-color: transparent;
-        transition: background-color 0.3s ease-in-out;
-    }
-
-    .bn38:hover {
-        background-color: rgb(193, 193, 193);
-    }
-
-
-
-
-
-    .dropbtn {
-        background-color: transparent;
-        color: var(--white);
-        border: none;
-        margin-top: 20px;
-    }
-
-
-
-
-
-
-
-
-
-    .handle-form form {
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        margin-top: 7vh;
-    }
-
-    .handle-form input {
-        width: 90%;
-        height: 8vh;
-    }
-
-    .handle-form textarea {
-        width: 90%;
-        height: 25vh;
-        resize: vertical;
-    }
-
-
-
-} */
-
 .navbar-social-icons {
     display: none;
 }
@@ -1644,13 +1532,13 @@ details>summary {
 
 
 
-@media only screen and (min-width: 2000px) and (max-width: 2500px) {
+@media only screen and (min-width: 1550px) and (max-width: 2500px) {
 
 
     /* Main submenu styling */
     .submenu {
         top: 5%;
-        left: 42%;
+        left: 35%;
     }
 
 
@@ -1658,23 +1546,28 @@ details>summary {
     /* Styling for Environmental Consultancy submenu */
     .ec-menu {
         top: 0;
-        left: 30%;
+        left: 32%;
     }
-
-
 
 
     /* Styling for Safety Services submenu */
     .ss-menu {
         top: 0;
-        left: 29vh;
+        left: 31vh;
     }
 
+    .ec-dropdown a {
+        padding: 22px;
+    }
+
+    .ss-dropdown a {
+        padding: 17px;
+    }
 
 
     .logo-txt {
         padding: 0;
-        width: 20vh;
+        width: 25vh;
         font-size: 13px;
         font-weight: 800;
     }
@@ -1736,8 +1629,6 @@ details>summary {
     .navbar-social-icons {
         cursor: pointer;
         display: flex;
-        justify-content: center;
-        align-items: center;
         margin-top: 10px;
         /* background-color: var(--green); */
     }
@@ -1745,7 +1636,7 @@ details>summary {
 
     .navbar-social-icons a {
         color: var(--white);
-        margin-right: 13px;
+        margin-right: 5px;
     }
 
     .navbar-social-icons a:hover {
@@ -1853,8 +1744,9 @@ details>summary {
 
 
     #company-logo {
+        object-fit: contain;
         margin-right: 10px;
-        width: 6vh;
+        width: 10vh;
     }
 
     .logo-txt {
@@ -2121,7 +2013,7 @@ details>summary {
     }
 
     .gallery-marquee-home marquee img {
-        width: 100%;
+        width: 70%;
     }
 
 

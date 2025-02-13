@@ -57,6 +57,11 @@ const Carrer = () => {
                 setLoading(false);
                 alert("Thank you. I Will Get Back To You As Soon As Possible.")
 
+                // Google Ads Event Snippet
+                window.gtag('event', 'conversion', {
+                    'send_to': 'AW-16864448452/exKICK-WhpwaEMSfzOk-',
+                });
+
                 setForm({
                     name: '',
                     email: '',
@@ -117,14 +122,7 @@ const Carrer = () => {
                     </div>
 
                 </div>
-
-
             </div>
-
-
-
-
-
 
             <QuickLinks />
         </section>
