@@ -19,7 +19,7 @@ const QuickLinks = () => {
                     <div className='quick-links-section1'>
                         <ul className='company-name'>
                             <h1 >Ujjwal Engineers & <br /> Environmental Services</h1>
-                            <h3>Environmental organization</h3>
+                            <p id='address-title'>Environmental organization</p>
 
                             <p>103, 14A, Kailash Nagar,</p>
                             <p> Ambernath (E), Dist. Thane</p>

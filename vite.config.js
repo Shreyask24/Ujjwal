@@ -12,4 +12,14 @@ export default defineConfig({
       deleteOriginFile: false, // Set true to remove original files after compression
     }),
   ],
+  build: {
+    sourcemap: false, // Disable sourcemaps for smaller builds
+    minify: 'terser', // Use Terser for better compression
+    terserOptions: {
+      compress: {
+        drop_console: true, // Remove console.logs
+        drop_debugger: true,
+      },
+    },
+  },
 })

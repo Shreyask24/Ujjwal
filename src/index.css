@@ -676,6 +676,11 @@ h3 {
     width: 100%;
 }
 
+#address-title {
+    font-size: larger;
+    font-weight: 700;
+}
+
 
 
 .link-items ul li a:hover {
@@ -2240,7 +2245,7 @@ details>summary {
         margin-left: -10px;
     }
 
-    .company-name h3 {
+    .company-name h2 {
         font-size: 18px;
     }
 
@@ -2308,5 +2313,15 @@ details>summary {
         width: 100%;
         font-weight: 500;
         font-size: 15px;
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
+
+    /* Mobile-specific adjustments */
+    button.env-btn,
+    a {
+        min-width: 48px;
+        min-height: 48px;
     }
 }
