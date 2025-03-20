@@ -149,6 +149,7 @@ html {
     font-weight: 600;
     text-transform: uppercase;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-display: swap;
     cursor: pointer;
     color: var(--white);
 }
@@ -234,6 +235,13 @@ html {
 .services-dropdown:hover .submenu,
 .services-dropdown:hover .dropbtn {
     visibility: visible;
+}
+
+/* Hide submenu when scrolling */
+body.scrolling .submenu,
+body.scrolling .ec-menu,
+body.scrolling .ss-menu {
+    visibility: hidden !important;
 }
 
 .ec-dropdown a {
@@ -679,7 +687,8 @@ h3 {
     padding: 5px;
 }
 
-.link-items ul h1 {
+.link-items ul h1,
+.link-items .quick-links-section2 h1 {
     color: var(--white);
     text-decoration: underline;
     padding: 15px;
@@ -816,12 +825,6 @@ footer span {
     height: fit-content;
     border-radius: 20px;
 }
-
-/* .img-text {
-    margin-right: 20vh;
-} */
-
-
 
 
 
@@ -1453,34 +1456,9 @@ details>summary {
     font-size: 20px;
     color: #000;
     font-weight: 600;
-    /* animation: blinking 0.5s alternate infinite; */
 }
 
-/* @keyframes blinking {
-    0% {
-        opacity: 50%;
-    }
 
-    50% {
-        opacity: 70%;
-    }
-
-    100% {
-        opacity: 100%;
-    }
-} */
-
-
-
-/* .impLinks-section ul li a {
-    color: var(--green);
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.impLinks-section ul li a:hover {
-    text-decoration: underline;
-} */
 
 .impLinks-section ul li {
     list-style: circle inside;
@@ -1493,8 +1471,10 @@ details>summary {
 /* Quick Links Styling */
 
 .quick-links {
-    background-color: var(--green);
-    color: var(--white);
+    background-color: #005f00;
+    /* A darker green for better contrast */
+    color: #ffffff;
+    /* White text */
 }
 
 
@@ -1538,7 +1518,7 @@ details>summary {
     /* Main submenu styling */
     .submenu {
         top: 5%;
-        left: 35%;
+        left: 36%;
     }
 
 

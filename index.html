@@ -6,8 +6,29 @@
   <link rel="icon" type="image/svg+xml" href="./src/assets/Logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- AOS Animation -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preload" as="image" href="UEESLogo.png">
+  <link rel="preload" as="font" type="font/woff2" href="verdana.woff2" crossorigin="anonymous">
+
+  <meta name="description"
+    content="Ujjwal Engineers - Providing top-quality engineering solutions for industrial and commercial projects. Contact us for reliable services." />
+
+  <!-- Preconnect to Facebook for Faster Tracking Pixel -->
+  <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
+
+  <!-- Preconnect to Google Tag Manager -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+
+  <!-- Preconnect to Google Analytics -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+
+  <!-- Preconnect to Unpkg CDN (For AOS) -->
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+
+
+  <!-- AOS Animation (Non-Blocking) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print"
+    onload="this.onload=null; this.media='all';">
 
   <title>UJJWAL ENGINEERS & ENVIRONMENTAL SERVICES</title>
 
@@ -41,12 +62,28 @@
 
     gtag('config', 'AW-16864448452');
   </script>
+
+  <!-- Google Tag Manager -->
+  <script async>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WCV9623W');</script>
+  <!-- End Google Tag Manager -->
 </head>
 
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCV9623W" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

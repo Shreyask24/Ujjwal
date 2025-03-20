@@ -11,6 +11,7 @@ import SafetyServices from "./screens/SafetyServices"
 
 import './index.css'
 import PrivacyPolicy from "./screens/PrivacyPolicy"
+import Thankyou from "./screens/Thankyou"
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="gallery" element={<Gallery />} />
           <Route path="contact" element={<Contact />} />
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="thank-you" element={<Thankyou />} />
         </Routes>
       </BrowserRouter>
     </>

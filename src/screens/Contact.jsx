@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import React, { useRef, useState } from 'react'
 import Navbar from './Navbar'
 import QuickLinks from './QuickLinks'
@@ -19,6 +19,7 @@ const Contact = () => {
     const service_template_Id = import.meta.env.VITE_REACT_APP_SERVICE_TEMPLATE;
     const service_public_key = import.meta.env.VITE_REACT_APP_PUBLIC_KEY;
 
+    const navigate = useNavigate()
 
     const formRef = useRef();
     const [form, setForm] = useState({
@@ -58,7 +59,7 @@ const Contact = () => {
         )
             .then(() => {
                 setLoading(false);
-                alert("Thank you. I Will Get Back To You As Soon As Possible.")
+                // alert("Thank you for contacting us, we will be in touch shortly")
 
                 // Google Ads Event Snippet
                 window.gtag('event', 'conversion', {
@@ -76,6 +77,7 @@ const Contact = () => {
                     console.log(error)
                     alert("Something Went Wrong!")
                 })
+                navigate("/thank-you")
             })
 
     }
@@ -151,11 +153,6 @@ const Contact = () => {
                 </div>
 
             </div>
-
-
-
-
-
 
             <QuickLinks />
         </section>

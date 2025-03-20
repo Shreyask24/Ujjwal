@@ -55,12 +55,14 @@ const Carrer = () => {
         )
             .then(() => {
                 setLoading(false);
-                alert("Thank you. I Will Get Back To You As Soon As Possible.")
+                // alert("Thank you for contacting us, we will be in touch shortly")
 
                 // Google Ads Event Snippet
-                window.gtag('event', 'conversion', {
-                    'send_to': 'AW-16864448452/exKICK-WhpwaEMSfzOk-',
-                });
+                if (window.gtag) {
+                    window.gtag('event', 'conversion', {
+                        'send_to': 'AW-16864448452/exKICK-WhpwaEMSfzOk-',
+                    });
+                }
 
                 setForm({
                     name: '',
@@ -73,6 +75,7 @@ const Carrer = () => {
                     console.log(error)
                     alert("Something Went Wrong!")
                 })
+                navigate("/thank-you")
             })
 
     }

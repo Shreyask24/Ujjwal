@@ -113,43 +113,6 @@ const About = () => {
                     </div>
                 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-                {/* <div>
-
-                    <p>
-
-                        UEES also specializes in conducting various types of environmental audits, including environmental
-                        compliance audits, environmental management system audits, and sustainability audits. We offer
-                        environmental reviews, assessments, and performance evaluations, focusing on green practices and
-                        sustainability. Our services include environmental due diligence, ensuring thorough assessments for
-                        environmental risks and compliance. We provide detailed environmental audit reports to help
-                        clients understand their environmental impact and improve their environmental performance.
-                    </p>
-
-                    <p >
-
-                        Furthermore, UEES specializes in comprehensive pollution control solutions, including air pollution
-                        control, water pollution control, and environmental pollution control. They offer a range of pollution
-                        control equipment and technologies, along with pollution prevention services. Their expertise
-                        extends to industrial pollution control, with a focus on Effluent Treatment Plants (ETP), Sewage
-                        Treatment Plants (STP), Water Treatment Plants (WTP), Multiple Effect Evaporators (MEE), and
-                        Mechanical Vapor Recompression (MVRE) systems. Additionally, UEES provides pollution control
-                        consulting services to help businesses implement effective pollution control measures.
-                    </p>
-
-                </div> */}
-
             </div>
             <QuickLinks />
         </section>

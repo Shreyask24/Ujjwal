@@ -83,7 +83,7 @@ const Home = () => {
                             and services, providing sustainability consulting and green solutions. We conduct environmental
                             impact assessments, offer environmental management and compliance services, and specialize in
                             environmental planning. Our services include eco-friendly consulting and innovative environmental
-                            solutions, all aimed at promoting sustainability and effective environmental practices. <Link to="/about"> <span> More</span></Link></p>
+                            solutions, all aimed at promoting sustainability and effective environmental practices. <Link to="/about"> <span> Know More</span></Link></p>
                     </div>
 
                     <Link to="/contact"><button data-aos="fade-left" data-aos-once='true' data-aos-duration="2000" className='about-btn'> Contact Us</button></Link>

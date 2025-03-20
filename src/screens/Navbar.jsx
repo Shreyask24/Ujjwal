@@ -18,6 +18,7 @@ import { Collapse, Modal, SwipeableDrawer } from '@mui/material';
 import { useState } from 'react';
 import { ExpandLess, ExpandMore, StarBorder } from '@mui/icons-material';
 import { useRef } from 'react';
+import { useEffect } from 'react';
 
 
 function Navbar() {
@@ -60,6 +61,26 @@ function Navbar() {
     };
 
 
+    useEffect(() => {
+        let scrollTimeout;
+
+        const handleScroll = () => {
+            document.body.classList.add("scrolling");
+
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+                document.body.classList.remove("scrolling");
+            }, 1000);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+
     return (
         <>
             <Box sx={{ backgroundColor: "#006346" }}>
@@ -67,7 +88,7 @@ function Navbar() {
 
                     <div style={{ display: "flex" }}>
                         <div style={{ display: "flex" }}>
-                            <img onClick={() => navigate("/")} src={UEESLogo} alt="company-logo" id='company-logo' />
+                            <img onClick={() => navigate("/")} src={UEESLogo} alt="company-logo" loading="lazy" id='company-logo' />
                             <h1 onClick={() => navigate("/")} className='logo-txt'>Ujjwal Engineers & Environmental Services</h1>
 
                         </div>
@@ -79,18 +100,18 @@ function Navbar() {
 
                     <div className='navbar-social-icons'>
 
-                        <Link to="https://www.instagram.com/ujjwal_engineers?igsh=MXJiZGtwZ2U5cm1kMQ==" target='_blank'>  <Instagram size="22px" strokeWidth={2} />
+                        <Link to="https://www.instagram.com/ujjwal_engineers?igsh=MXJiZGtwZ2U5cm1kMQ==" target='_blank' aria-label="Instagram - Ujjwal Engineers">  <Instagram size="22px" strokeWidth={2} />
                         </Link>
-                        <Link to="https://www.facebook.com/profile.php?id=61557895696282&mibextid=ZbWKwL" target='_blank'>
+                        <Link to="https://www.facebook.com/profile.php?id=61557895696282&mibextid=ZbWKwL" target='_blank' aria-label="Facebook - Ujjwal Engineers">
                             <Facebook strokeWidth={1.5} size="24px" />
                         </Link>
-                        <Link to="https://youtube.com/@UjjwalEngineers?si=gJkfA1zAApnptO12" target='_blank'>
+                        <Link to="https://youtube.com/@UjjwalEngineers?si=gJkfA1zAApnptO12" target='_blank' aria-label="Youtube - Ujjwal Engineers">
                             <Youtube strokeWidth={1.5} size="26px" />
                         </Link>
-                        <Link to="https://www.linkedin.com/company/ujjwal-engineers-and-environmental-services/?viewAsMember=true" target='_blank'>
+                        <Link to="https://www.linkedin.com/company/ujjwal-engineers-and-environmental-services/?viewAsMember=true" aria-label="Linkedin - Ujjwal Engineers" target='_blank'>
                             <Linkedin strokeWidth={1.5} size="26px" />
                         </Link>
-                        <Link to="https://x.com/Ujjwalengineers?t=alqC_Eq-jefHB5VW74EeLA&s=08" target='_blank'>
+                        <Link to="https://x.com/Ujjwalengineers?t=alqC_Eq-jefHB5VW74EeLA&s=08" aria-label="Twitter - Ujjwal Engineers" target='_blank'>
                             <Twitter strokeWidth={1.5} size="26px" />
                         </Link>
 
@@ -102,18 +123,18 @@ function Navbar() {
                         <ul>
 
 
-                            <li ><Link to="/">Home</Link></li>
-                            <li ><Link to="/about">About us</Link></li>
+                            <li ><Link to="/" aria-label="Home - Ujjwal Engineers">Home</Link></li>
+                            <li ><Link to="/about" aria-label="About-us - Ujjwal Engineers">About us</Link></li>
 
 
                             <li className="services-dropdown">
-                                <Link>Services</Link>
-                                <button className="dropbtn">
+                                <Link aria-label="Services - Ujjwal Engineers">Services</Link>
+                                <button className="dropbtn" aria-label="Open Services dropdown">
                                     <ChevronDown size={16} strokeWidth={5} />
                                 </button>
                                 <ul className="submenu">
                                     <li className="ec-dropdown">
-                                        <a href="#" style={{ fontSize: "18px" }}>Environmental Consultancy</a>
+                                        <a href="#" style={{ fontSize: "18px" }} aria-label="Environmental Consultancy">Environmental Consultancy</a>
                                         <ul className="ec-menu">
                                             <li><Link to="/services" state={{ section: "life-cycle-assessment" }} style={{ fontSize: "17px" }}>Life Cycle Assessment</Link></li>
                                             <li><Link to="/services" state={{ section: "product-carbon-footprint" }} style={{ fontSize: "17px" }}>Product Carbon Footprint</Link></li>
@@ -127,7 +148,7 @@ function Navbar() {
                                         </ul>
                                     </li>
                                     <li className="ss-dropdown">
-                                        <a href="#" style={{ fontSize: "18px" }}>Safety Services Consultancy</a>
+                                        <a href="#" style={{ fontSize: "18px" }} aria-label="Safety Services Consultancy">Safety Services Consultancy</a>
                                         <ul className="ss-menu">
                                             <li><Link to="/safety-services" state={{ section: "risk-assessment" }} style={{ fontSize: "17px" }}>Risk Assessment</Link></li>
                                             <li><Link to="/safety-services" state={{ section: "workshop-facilitation" }} style={{ fontSize: "17px" }}>Workshop Facilitation</Link></li>
@@ -145,7 +166,7 @@ function Navbar() {
 
                             <div className="dropdown">
                                 <a className='nav-anchor' href=""> Projects</a>
-                                <button className="dropbtn"><ChevronDown size={16} strokeWidth={5} /></button>
+                                <button className="dropbtn" aria-label="Open Projects dropdown"><ChevronDown size={16} strokeWidth={5} /></button>
                                 <div className="dropdown-content">
                                     <Link to="/projects" state={{ section: "etp" }}>Effluent Treatment Plant (ETP)</Link>
                                     <Link to="/projects" state={{ section: "mee" }}>Multiple Effect Evaporator (MEE)</Link>
@@ -155,36 +176,33 @@ function Navbar() {
                                     <Link to="/projects" state={{ section: "ro" }}>Reverse Osmosis Plant (RO)</Link>
                                 </div>
                             </div>
-                            <li><Link to="/career">Career</Link></li>
-                            <li><Link to="/gallery">Gallery</Link></li>
-                            <li><Link to="/contact">Contact us</Link></li>
+                            <li><Link to="/career" aria-label="Career - Ujjwal Engineers">Career</Link></li>
+                            <li><Link to="/gallery" aria-label="Gallery - Ujjwal Engineers">Gallery</Link></li>
+                            <li><Link to="/contact" aria-label="Contact us - Ujjwal Engineers">Contact us</Link></li>
                         </ul>
 
                     </div>
                     <div className='enquiry-container'>
                         <div className='social-icons'>
 
-                            <Link to="https://www.instagram.com/ujjwal_engineers?igsh=MXJiZGtwZ2U5cm1kMQ==" target='_blank'>  <Instagram size="26px" strokeWidth={2} />
+                            <Link to="https://www.instagram.com/ujjwal_engineers?igsh=MXJiZGtwZ2U5cm1kMQ==" target='_blank' aria-label="Instagram - Ujjwal Engineers">  <Instagram size="26px" strokeWidth={2} />
                             </Link>
-                            <Link to="https://www.facebook.com/profile.php?id=61557895696282&mibextid=ZbWKwL" target='_blank'>
+                            <Link to="https://www.facebook.com/profile.php?id=61557895696282&mibextid=ZbWKwL" target='_blank' aria-label="Facebook - Ujjwal Engineers">
                                 <Facebook strokeWidth={1.5} size="28px" />
                             </Link>
-                            <Link to="https://youtube.com/@UjjwalEngineers?si=gJkfA1zAApnptO12" target='_blank'>
+                            <Link to="https://youtube.com/@UjjwalEngineers?si=gJkfA1zAApnptO12" target='_blank' aria-label="Youtube - Ujjwal Engineers">
                                 <Youtube strokeWidth={1.5} size="35px" />
                             </Link>
-                            <Link to="https://www.linkedin.com/company/ujjwal-engineers-and-environmental-services/?viewAsMember=true" target='_blank'>
+                            <Link to="https://www.linkedin.com/company/ujjwal-engineers-and-environmental-services/?viewAsMember=true" aria-label="Linkedin - Ujjwal Engineers" target='_blank'>
                                 <Linkedin strokeWidth={1.5} size="30px" />
                             </Link>
-                            <Link to="https://x.com/Ujjwalengineers?t=alqC_Eq-jefHB5VW74EeLA&s=08" target='_blank'>
+                            <Link to="https://x.com/Ujjwalengineers?t=alqC_Eq-jefHB5VW74EeLA&s=08" aria-label="Twitter - Ujjwal Engineers" target='_blank'>
                                 <Twitter strokeWidth={1.5} size="30px" />
                             </Link>
                         </div>
 
                     </div>
                     <Link to="/contact"><button className='bn3637 bn38'>Make Enquiry</button></Link>
-
-
-
 
                 </nav >
 
