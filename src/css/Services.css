@@ -1,0 +1,154 @@
+/* ============================
+   General Layout & Section Title
+============================ */
+
+.services-maincontent {
+    background-color: var(--white, #f4f9f9);
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    overflow-x: hidden;
+}
+
+.section-title h1 {
+    text-align: center;
+    font-size: clamp(2rem, 3vw, 3rem);
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+
+
+/* ============================
+   Service Sections Layout
+============================ */
+
+.services-content,
+.services-content-alternate {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.services-content-alternate {
+    background-color: var(--green, #00695c);
+    color: #ffffff;
+}
+
+.services-content-alternate .service-text {
+    color: #ffffff;
+}
+
+
+/* ============================
+   Images
+============================ */
+
+.services-content img,
+.services-content-alternate img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid var(--green, #00695c);
+    object-fit: contain;
+    pointer-events: none;
+}
+
+
+/* ============================
+   Text Content
+============================ */
+
+.service-text {
+    font-size: 1.125rem;
+    line-height: 1.3;
+    text-align: justify;
+    padding: 0;
+}
+
+.service-text h3 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: inherit;
+}
+
+.service-text p {
+    margin-top: 1rem;
+}
+
+.service-text b {
+    display: block;
+    margin-top: 1.2rem;
+    font-weight: 600;
+    color: inherit;
+}
+
+.service-text li {
+    margin-top: 0.5rem;
+    margin-left: 1.2rem;
+    list-style-type: disc;
+}
+
+
+/* ============================
+   Typewriter Section
+============================ */
+
+.services-typewriter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d9;
+    color: #000;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    min-height: 100px;
+}
+
+.services-typewriter span {
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* ============================
+   Responsive Design
+============================ */
+
+@media (max-width: 1024px) {
+
+    .services-content,
+    .services-content-alternate {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .services-content-alternate {
+        background-color: #00695c;
+        color: #ffffff;
+    }
+
+    .services-content img,
+    .services-content-alternate img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .service-text {
+        padding: 0;
+    }
+
+    .services-typewriter span {
+        font-size: 1rem;
+    }
+}

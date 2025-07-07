@@ -93,7 +93,7 @@ function Navbar() {
 
                         </div>
 
-                        <Button sx={{ display: "flex", justifyContent: "end", visibility: { xs: "visible", xl: "hidden" } }} onClick={handleOpen}>
+                        <Button sx={{ display: { xs: "flex", lg: "none" }, justifyContent: "end", visibility: { xs: "visible", lg: "hidden" } }} onClick={handleOpen}>
                             <MenuIcon style={{ color: "white" }} size="30px" />
                         </Button>
                     </div>
@@ -134,29 +134,29 @@ function Navbar() {
                                 </button>
                                 <ul className="submenu">
                                     <li className="ec-dropdown">
-                                        <a href="#" style={{ fontSize: "18px" }} aria-label="Environmental Consultancy">Environmental Consultancy</a>
+                                        <a href="#" className='ec' aria-label="Environmental Consultancy">Environmental Consultancy</a>
                                         <ul className="ec-menu">
-                                            <li><Link to="/services" state={{ section: "life-cycle-assessment" }} style={{ fontSize: "17px" }}>Life Cycle Assessment</Link></li>
-                                            <li><Link to="/services" state={{ section: "product-carbon-footprint" }} style={{ fontSize: "17px" }}>Product Carbon Footprint</Link></li>
-                                            <li><Link to="/services" state={{ section: "greenhouse-gas-emission" }} style={{ fontSize: "17px" }}>Greenhouse Gas Emission</Link></li>
-                                            <li><Link to="/services" state={{ section: "environmental-clearance" }} style={{ fontSize: "17px" }}>Environmental Clearance (EC/EIA)</Link></li>
-                                            <li><Link to="/services" state={{ section: "consent-to-establish" }} style={{ fontSize: "17px" }}>Consent to Establish / Consent to Operate</Link></li>
-                                            <li><Link to="/services" state={{ section: "environmental-audit" }} style={{ fontSize: "17px" }}>Environmental Audit</Link></li>
-                                            <li><Link to="/services" state={{ section: "statutory-compliances" }} style={{ fontSize: "17px" }}>Statutory Compliances</Link></li>
-                                            <li><Link to="/services" state={{ section: "environmental-monitoring-and-analysis" }} style={{ fontSize: "17px" }}>Environmental Monitoring and Analysis</Link></li>
-                                            <li><Link to="/services" state={{ section: "epr" }} style={{ fontSize: "17px" }}>Extended Producer Responsibility (EPR)</Link></li>
+                                            <li><Link to="/services" state={{ section: "life-cycle-assessment" }} className='ec'>Life Cycle Assessment</Link></li>
+                                            <li><Link to="/services" state={{ section: "product-carbon-footprint" }} className='ec'>Product Carbon Footprint</Link></li>
+                                            <li><Link to="/services" state={{ section: "greenhouse-gas-emission" }} className='ec'>Greenhouse Gas Emission</Link></li>
+                                            <li><Link to="/services" state={{ section: "environmental-clearance" }} className='ec'>Environmental Clearance (EC/EIA)</Link></li>
+                                            <li><Link to="/services" state={{ section: "consent-to-establish" }} className='ec'>Consent to Establish</Link></li>
+                                            <li><Link to="/services" state={{ section: "environmental-audit" }} className='ec'>Environmental Audit</Link></li>
+                                            <li><Link to="/services" state={{ section: "statutory-compliances" }} className='ec'>Statutory Compliances</Link></li>
+                                            <li><Link to="/services" state={{ section: "environmental-monitoring-and-analysis" }} className='ec'>Environmental Monitoring and Analysis</Link></li>
+                                            <li><Link to="/services" state={{ section: "epr" }} className='ec'>Extended Producer Responsibility (EPR)</Link></li>
                                         </ul>
                                     </li>
                                     <li className="ss-dropdown">
-                                        <a href="#" style={{ fontSize: "18px" }} aria-label="Safety Services Consultancy">Safety Services Consultancy</a>
+                                        <a href="#" className='ec' aria-label="Safety Services Consultancy">Safety Services Consultancy</a>
                                         <ul className="ss-menu">
-                                            <li><Link to="/safety-services" state={{ section: "risk-assessment" }} style={{ fontSize: "17px" }}>Risk Assessment</Link></li>
-                                            <li><Link to="/safety-services" state={{ section: "workshop-facilitation" }} style={{ fontSize: "17px" }}>Workshop Facilitation</Link></li>
-                                            <li><Link to="/safety-services" state={{ section: "functional-safety-services" }} style={{ fontSize: "17px" }}>Functional Safety Services</Link></li>
-                                            <li><Link to="/safety-services" state={{ section: "other-safety-workshop-services" }} style={{ fontSize: "17px" }}>Other Safety Workshop Services</Link></li>
-                                            <li><Link to="/safety-services" state={{ section: "other-safety-desktop-studies" }} style={{ fontSize: "17px" }}>Other Safety Desktop Studies</Link></li>
-                                            <li><Link to="/safety-services" state={{ section: "safety-audit" }} style={{ fontSize: "17px" }}>Safety Audit</Link></li>
-                                            <li><Link to="/safety-services" state={{ section: "energy-audit" }} style={{ fontSize: "17px" }}>Energy Audit</Link></li>
+                                            <li><Link to="/safety-services" state={{ section: "risk-assessment" }} className='ec'>Risk Assessment</Link></li>
+                                            <li><Link to="/safety-services" state={{ section: "workshop-facilitation" }} className='ec'>Workshop Facilitation</Link></li>
+                                            <li><Link to="/safety-services" state={{ section: "functional-safety-services" }} className='ec'>Functional Safety Services</Link></li>
+                                            <li><Link to="/safety-services" state={{ section: "other-safety-workshop-services" }} className='ec'>Other Safety Workshop Services</Link></li>
+                                            <li><Link to="/safety-services" state={{ section: "other-safety-desktop-studies" }} className='ec'>Other Safety Desktop Studies</Link></li>
+                                            <li><Link to="/safety-services" state={{ section: "safety-audit" }} className='ec'>Safety Audit</Link></li>
+                                            <li><Link to="/safety-services" state={{ section: "energy-audit" }} className='ec'>Energy Audit</Link></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -168,12 +168,12 @@ function Navbar() {
                                 <a className='nav-anchor' href=""> Projects</a>
                                 <button className="dropbtn" aria-label="Open Projects dropdown"><ChevronDown size={16} strokeWidth={5} /></button>
                                 <div className="dropdown-content">
-                                    <Link to="/projects" state={{ section: "etp" }}>Effluent Treatment Plant (ETP)</Link>
-                                    <Link to="/projects" state={{ section: "mee" }}>Multiple Effect Evaporator (MEE)</Link>
-                                    <Link to="/projects" state={{ section: "mvre" }}>Mechanical Vapor Recompression (MVRE)</Link>
-                                    <Link to="/projects" state={{ section: "atfd" }}>Agitated Thin Film Dryer (ATFD)</Link>
-                                    <Link to="/projects" state={{ section: "stp" }}>Sewage Treatment Plant (STP)</Link>
-                                    <Link to="/projects" state={{ section: "ro" }}>Reverse Osmosis Plant (RO)</Link>
+                                    <Link to="/projects" state={{ section: "etp" }} className='ec'>Effluent Treatment Plant (ETP)</Link>
+                                    <Link to="/projects" state={{ section: "mee" }} className='ec'>Multiple Effect Evaporator (MEE)</Link>
+                                    <Link to="/projects" state={{ section: "mvre" }} className='ec'>Mechanical Vapor Recompression (MVRE)</Link>
+                                    <Link to="/projects" state={{ section: "atfd" }} className='ec'>Agitated Thin Film Dryer (ATFD)</Link>
+                                    <Link to="/projects" state={{ section: "stp" }} className='ec'>Sewage Treatment Plant (STP)</Link>
+                                    <Link to="/projects" state={{ section: "ro" }} className='ec'>Reverse Osmosis Plant (RO)</Link>
                                 </div>
                             </div>
                             <li><Link to="/career" aria-label="Career - Ujjwal Engineers">Career</Link></li>

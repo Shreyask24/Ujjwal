@@ -1,0 +1,89 @@
+:root {
+    --green: #006346;
+    --grey: #D9D9D9;
+    --white: #f2f2f2;
+    --yellow: #ffbb00;
+}
+
+.gallery {
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+}
+
+.section-title {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.gallery-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* Marquee section */
+.gallery-marquee {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.marquee-heading {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.marquee-section {
+    overflow: hidden;
+    position: relative;
+    padding: 1rem 0;
+}
+
+.marquee-section marquee img {
+    height: 120px;
+    margin: 0 1rem;
+    vertical-align: middle;
+}
+
+/* Important Links Section */
+.impLinks-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+    padding: 0;
+    list-style: none;
+}
+
+.impLinks-section ul,
+.impLinks-section div {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.impLinks-section li {
+    font-size: 10px;
+}
+
+.impLinks-section a {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.impLinks-section a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Typography */
+.section-title h1,
+.marquee-heading h1 {
+    font-size: clamp(1.7rem, 2.5vw, 2rem);
+}

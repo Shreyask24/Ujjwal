@@ -6,6 +6,8 @@ import UdyamCertificate from "../assets/Udyam-Registration-Certificate.pdf"
 import PolicyMarathi from "../assets/Quality-Policy-Marathi.pdf"
 import PolicyEnglish from "../assets/Quality-Policy-English.pdf"
 
+import "../css/QuickLinks.css"
+
 const QuickLinks = () => {
     return (
         <section>
@@ -45,7 +47,7 @@ const QuickLinks = () => {
                             <li><Link to="/services" state={{ section: "consent-to-establish" }}>Consent to Establish</Link></li>
                             <li><Link to="/services" state={{ section: "environmental-audit" }}>Environmental Audit</Link></li>
                             <li><Link to="/services" state={{ section: "statutory-compliances" }}>Statutory Compliances</Link></li>
-                            <li><Link to="/services" state={{ section: "environmental-monitoring-and-analysis" }}>Environmental Monitoring & Analysis</Link></li>
+                            <li><Link to="/services" state={{ section: "environmental-monitoring-and-analysis" }}>Environmental Monitoring</Link></li>
                             <li><Link to="/services" state={{ section: "epr" }}>Extended Producer Responsibility</Link></li>
                         </ul>
                     </div>

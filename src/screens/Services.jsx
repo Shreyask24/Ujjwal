@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Navbar from './Navbar'
 import QuickLinks from './QuickLinks'
 
+import "../css/Services.css"
 import Typewriter from 'typewriter-effect';
 
 
@@ -396,7 +397,7 @@ const Services = () => {
                             <img data-aos="fade-right" data-aos-once='true' data-aos-duration="2000" src={EnvironmentalMonitoring} loading="lazy" alt="Environmental Monitoring and Analysis" />
 
                             <div data-aos="fade-in" data-aos-once='true' data-aos-duration="2000" className="service-text">
-                                <b>Environmental Monitoring and Analysis.</b>
+                                <h3>Environmental Monitoring and Analysis.</h3>
                                 <li className="sublist">Ambient Air Monitoring and Analysis.</li>
 
                                 <li className="sublist">Source / Stack Monitoring and Analysis.</li>

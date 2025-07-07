@@ -1,4 +1,6 @@
 import React from 'react'
+import '../css/Gallery.css';
+
 
 import AshuOrganics from "../assets/Ashu-Organics.png"
 import UPL from "../assets/UPL-Secondary.png"
@@ -143,7 +145,6 @@ const Gallery = () => {
 
 
                 <div className='section-title'>
-
                     <h1>Important Links</h1>
                 </div>
                 <div data-aos="fade-in" data-aos-once='true' data-aos-duration="2000" className='impLinks-section'>
