@@ -93,7 +93,7 @@ function Navbar() {
 
                         </div>
 
-                        <Button sx={{ display: { xs: "flex", lg: "none" }, justifyContent: "end", visibility: { xs: "visible", lg: "hidden" } }} onClick={handleOpen}>
+                        <Button sx={{ display: { xs: "flex", md: "none" }, justifyContent: "end", visibility: { xs: "visible", lg: "hidden" } }} onClick={handleOpen}>
                             <MenuIcon style={{ color: "white" }} size="30px" />
                         </Button>
                     </div>

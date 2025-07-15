@@ -589,11 +589,11 @@ h3 {
 .about-btn {
     margin-bottom: 10vh;
     border: 2px solid var(--green);
-    margin-left: 83vw;
+    margin-left: 80%;
     padding: 10px;
     background-color: var(--white);
     color: var(--green);
-    width: 18vh;
+    width: 13%;
     border-radius: 20px;
     cursor: pointer;
     font-size: 20px;
@@ -1527,12 +1527,12 @@ details>summary {
 
     /* Styling for Environmental Consultancy submenu */
     .ec-menu {
-        left: 44%;
+        left: 43%;
     }
 
     /* Styling for Safety Services submenu */
     .ss-menu {
-        left: 45%;
+        left: 43%;
     }
 }
 
@@ -1543,7 +1543,7 @@ details>summary {
     /* Main submenu styling */
     .submenu {
         top: 5%;
-        left: 36%;
+        left: 32%;
     }
 
 
@@ -1551,14 +1551,14 @@ details>summary {
     /* Styling for Environmental Consultancy submenu */
     .ec-menu {
         top: 0;
-        left: 32%;
+        left: 37%;
     }
 
 
     /* Styling for Safety Services submenu */
     .ss-menu {
         top: 0;
-        left: 31vh;
+        left: 36vh;
     }
 
     .ec-dropdown a {
@@ -1654,6 +1654,7 @@ details>summary {
         font-size: 14px;
     }
 
+
 }
 
 @media only screen and (min-width: 1250px) and (max-width: 1500px) {
@@ -1681,7 +1682,7 @@ details>summary {
 
 }
 
-@media only screen and (min-width: 200px) and (max-width: 1200px) {
+@media only screen and (min-width: 200px) and (max-width: 1000px) {
     .navbar {
         display: flex;
         flex-wrap: wrap;
